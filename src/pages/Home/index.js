@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     return(
         <div className="container">
-            <div className="left-circle"></div>
+            {/* <div className="left-circle"></div> */}
 
             <div className="container-center">
                 <div className="textos">
@@ -25,7 +25,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="right-circle"></div>
+            {/* <div className="right-circle"></div> */}
         </div>
     );
 }
