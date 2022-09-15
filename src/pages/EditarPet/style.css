@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: column;
 }
-input {
+.container-edit div input {
     width: 320px;
     height: 50px;
     background: rgba(108, 193, 250, 0.5);

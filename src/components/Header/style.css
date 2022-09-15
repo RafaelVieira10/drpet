@@ -33,4 +33,36 @@ header {
     text-decoration: none;
     color: #000000;
 }
+ .dp-menu ul  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.dp-menu ul li {
+    position: relative;
+}
+.sub-menu li {
+    text-align: center;
+    margin-left: -40px;
+    background-color: #ffff;
+    padding: 0;
+}
+.teste {
+    margin-top: 10px;
+}
+
+
+/* SUB MENU */
+.dp-menu ul ul {
+    position: absolute;
+    display: none;
+}
+.dp-menu ul li:hover ul {
+    display: block;
+}
+.dp-menu ul ul li a {
+    display: block;
+    text-align: center;
+}
+
 

@@ -1,12 +1,10 @@
 import './style.css';
 import { Link } from 'react-router-dom';
-// import Header from '../Header';
+
 
 function Home() {
     return(
         <div className="container">
-            {/* <div className="left-circle"></div> */}
-
             <div className="container-center">
                 <div className="textos">
                     <h2>Agende uma consulta</h2>
@@ -19,13 +17,8 @@ function Home() {
                     <Link to={"/Agendamentos"}><button className='button-agende-home'>AGENDE AGORA</button></Link>
 
                 </div>
-
-                <div className="div-img">
                     <img src="assets/dogHome.png" alt="" className='img-dog-home'/>
-                </div>
             </div>
-
-            {/* <div className="right-circle"></div> */}
         </div>
     );
 }

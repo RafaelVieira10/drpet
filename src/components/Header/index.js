@@ -20,12 +20,34 @@ function Header() {
 
              <div className="container-nav">
                 <div className="nav">
-                    <Link  to={"/"}>Home</Link>
-                    <Link to={"/"}>Agendamentos</Link>
-                    <Link to={"/EditarPet"}>Meus Pets</Link> 
-                    <Link to={"/login"}>
-                        <FontAwesomeIcon icon={faCircleUser} className="icone-user"  />
-                    </Link>
+                    <nav className='dp-menu'>
+                        <ul className='menu'>
+                            <li>
+                                <Link  to={"/"}>Home</Link>
+                            </li>
+                            <li>
+                                <Link to={"/"}>Agendamentos</Link>
+                            </li>
+                        
+                                <li>
+                                    <Link to={"/CadastrarPet"} className="">Meus Pets</Link>
+                                    <ul className='sub-menu'>
+                                        <div className='teste'>
+                                        <li>
+                                            <Link to={"/CadastrarPet"} className="">Cadastrar</Link>
+                                        </li>
+                                        <li>
+                                            <Link to={"/EditarPet"} className="" >Editar</Link>
+                                        </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            <Link to={"/AlterarInformacoes"}>
+                                <FontAwesomeIcon icon={faCircleUser} className="icone-user"  />
+                            </Link>
+                        </ul>
+                    </nav>
+                    
                 </div>
 
             </div> 

@@ -1,0 +1,42 @@
+.container-alterar-infos {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 330px;
+    min-height: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.div-text-icon {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.icon-lapis {
+    margin-left: 15px;
+}
+.div-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.div-buttons button {
+    background: rgba(108, 193, 250, 0.5);
+    border-radius: 20px;
+    width: 295px;
+    height: 50px;
+    margin-top: 25px;  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    margin-left: 30px;
+}
+
+
+
