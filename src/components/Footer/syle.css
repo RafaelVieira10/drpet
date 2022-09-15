@@ -1,0 +1,16 @@
+footer {
+    background-color: #fff;
+    border-top: 1px solid #4EDF4B;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.container-texto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p {
+    color: #000;
+}
