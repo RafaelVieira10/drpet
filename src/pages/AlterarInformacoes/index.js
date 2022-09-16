@@ -18,20 +18,20 @@ function AlterarInformacoes() {
             </div>
 
             <div className="div-buttons">
-                <button>
+                <Link to={"/InformacoesPessoais"}>
                     Informações pessoais
                     <FontAwesomeIcon icon={faGear} className="icon" />
-                </button>
+                </Link>
 
-                <button>
+                <Link to={"/AlterarSenha"}>
                     Alterar senha
                     <FontAwesomeIcon icon={faLock} className="icon" />
-                </button>
+                </Link>
 
-                <button>
+                <Link to={"/AlterarEmail"}>
                     Alterar E-mail
                     <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                </button>
+                </Link>
 
             </div>
 

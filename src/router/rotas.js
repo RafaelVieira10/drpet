@@ -22,12 +22,9 @@ const Rotas = () => {
                 <Route exact path="/CadastrarPet"          element={ <CadastrarPet /> } />
                 <Route exact path="/AlterarInformacoes"          element={ <AlterarInformacoes /> } />
                 <Route exact path="/CadastrarCliente"          element={ <CadastrarCliente /> } />
-                {/* <Route exact path="/Agendamentos" component={ Agendamentos } />
-                <Route exact path="/MeusPets" component={ MeuPets } />
-                {/* A rota para a página de erro deverá ser sempre a última */}
-                {/* <Route exact path="*"          element={ Erro } /> */} 
+               
             </Routes>
-            {/* <Footer /> */}
+            
     </BrowserRouter>
     );
 }

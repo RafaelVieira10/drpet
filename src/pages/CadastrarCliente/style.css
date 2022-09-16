@@ -14,23 +14,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
 }
 .container-cadastro-cliente div input {
-    width: 320px;
+    width: 80%;
     height: 50px;
     background: rgba(108, 193, 250, 0.5);
     border-radius: 20px;
     margin-top: 20px;
     outline: none;
     border: none;
-    text-align: center;
     font-size: 16px;
+    padding-left: 20px;
 }
 .button-edit {
     background: #44EBA0;
     border-radius: 20px;
-    width: 320px;
+    width: 85%;
     height: 50px;
     font-weight: bold;
 }

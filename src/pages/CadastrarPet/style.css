@@ -34,29 +34,33 @@ input {
 .container-cadastro-pet {
     max-width: 360px;
     height: 620px;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .content-cadastro  {
+    background-color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 25px;
+    border-radius: 20px;
 }
 .content-cadastro input {
     width: 320px;
     height: 50px;
-    background: #fff;
+    background: rgba(108, 193, 250, 0.5);
     border: 1px solid #000;
     border-radius: 20px;
     margin-top: 20px;
     outline: none;
-    text-align: center;
     font-size: 16px;
+    border: none;
+    padding-left: 20px;
 }
 .button-cadastro {
     background: rgba(101, 101, 101, 0.5);
@@ -66,6 +70,7 @@ input {
     height: 50px;
     font-weight: bold;
     border: none;
+    background: #44EBA0;
 }
 .content-cadastro h2 {
     text-align: center;

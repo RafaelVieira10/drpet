@@ -25,7 +25,7 @@
     align-items: center;
     padding: 10px;
 }
-.div-buttons button {
+.div-buttons a {
     background: rgba(108, 193, 250, 0.5);
     border-radius: 20px;
     width: 295px;
@@ -33,6 +33,8 @@
     margin-top: 25px;  display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: #000;
 }
 .icon {
     margin-left: 30px;

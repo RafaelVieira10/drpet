@@ -1,7 +1,5 @@
 import React from "react";
 import './style.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
 
 function CadastrarCliente() {
     return(
