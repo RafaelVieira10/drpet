@@ -26,7 +26,7 @@ function Header() {
                                 <Link  to={"/"}>Home</Link>
                             </li>
                             <li>
-                                <Link to={"/"}>Agendamentos</Link>
+                                <Link to={"/CadastrarCliente"}>Agendamentos</Link>
                             </li>
                         
                                 <li>

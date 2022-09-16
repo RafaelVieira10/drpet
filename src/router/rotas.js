@@ -8,6 +8,7 @@ import Home from '../pages/Home';
 import  EditarPet from '../pages/EditarPet';
 import  CadastrarPet from '../pages/CadastrarPet';
 import AlterarInformacoes from '../pages/AlterarInformacoes';
+import CadastrarCliente from '../pages/CadastrarCliente';
 // import Agendamentos '../pages/Agendamentos';
 // import MeusPets '../pages/MeusPets';
 
@@ -20,6 +21,7 @@ const Rotas = () => {
                 <Route exact path="/EditarPet"          element={ <EditarPet /> } />
                 <Route exact path="/CadastrarPet"          element={ <CadastrarPet /> } />
                 <Route exact path="/AlterarInformacoes"          element={ <AlterarInformacoes /> } />
+                <Route exact path="/CadastrarCliente"          element={ <CadastrarCliente /> } />
                 {/* <Route exact path="/Agendamentos" component={ Agendamentos } />
                 <Route exact path="/MeusPets" component={ MeuPets } />
                 {/* A rota para a página de erro deverá ser sempre a última */}
