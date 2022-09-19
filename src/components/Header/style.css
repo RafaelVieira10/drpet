@@ -14,9 +14,11 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 30px;
     height: 70px;
 }
+
 .icone-logo {
     font-size: 38px;
     margin-right: 15px;
@@ -46,10 +48,18 @@ header {
     text-align: center;
     margin-left: -40px;
     background-color: #ffff;
-    padding: 0;
+    padding: 10px;
 }
-.teste {
-    margin-top: 10px;
+.sub-menu {
+    margin-top: 15px;
+}
+.icon a {
+    text-decoration: none;
+    color: #000;
+}
+.title-logo a{
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -65,5 +75,81 @@ header {
     /* display: block; */
     text-align: center;
 }
+.menu-mobile div {
+    width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin: 8px;
+}
+.menu-mobile {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+.active-nav {
+    display: block;
+}
+.active-nav li {
+    opacity: 100;
+}
 
 
+
+
+
+
+@media (max-width:800px) {
+    .menu-mobile {
+        display: block;
+    }
+    .active-menu {
+        display: block;
+        width: 100vw;
+    }
+    nav {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        transition: transform 0.3s ease-in;
+        display: none;
+        z-index: 1000;
+       background-color: #fff;
+        
+    }
+    .nav a {
+        padding: 0;
+        margin: 10px;
+        color: #000;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }    
+    .nav ul a {
+        margin-top: 50px;
+    }
+    ul a svg{
+        margin-top: 200px;
+    }
+    .dp-menu ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    
+}

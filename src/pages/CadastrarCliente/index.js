@@ -12,7 +12,7 @@ function CadastrarCliente() {
                 <input type="password" className="input" name="" placeholder="Senha"></input>
                 
 
-                <button type="submit" className="button-edit">Editar</button>
+                <button type="submit" className="button-edit">Cadastrar</button>
                 
             </div>
         </div>

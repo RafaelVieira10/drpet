@@ -1,26 +1,9 @@
-
-/* .left-circle {
-    background-color: #4EDF4B;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-left: -60px;
-} */
-/* .right-circle {
-    background-color: #4EDF4B;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; 
-    position: absolute;
-    bottom: 0;
-    right: 0;  
-} */
 .container-center {
     position: absolute;
-    max-width: 840px;
+    max-width: 860px;
     min-height: 340px;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     background: #4EDF4B;
     border: 2px solid #297704;
