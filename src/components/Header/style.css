@@ -44,15 +44,6 @@ header {
 .dp-menu ul li {
     position: relative;
 }
-.sub-menu li {
-    text-align: center;
-    margin-left: -40px;
-    background-color: #ffff;
-    padding: 10px;
-}
-.sub-menu {
-    margin-top: 15px;
-}
 .icon a {
     text-decoration: none;
     color: #000;
@@ -62,19 +53,7 @@ header {
     color: #000;
 }
 
-
-/* SUB MENU */
-.dp-menu ul ul {
-    position: absolute;
-    display: none;
-}
-.dp-menu ul li:hover ul {
-    display: block;
-}
-.dp-menu ul ul li a {
-    /* display: block; */
-    text-align: center;
-}
+/* MENU MOBILE */
 .menu-mobile div {
     width: 32px;
     height: 3px;
@@ -83,15 +62,12 @@ header {
 }
 .menu-mobile {
     cursor: pointer;
-    position: absolute;
+    position: absolute; 
     right: 20px;
     display: none;
 }
 .active-nav {
     display: block;
-}
-.active-nav li {
-    opacity: 100;
 }
 
 
@@ -133,7 +109,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         margin: 0;
         text-align: center;
     }    
@@ -150,6 +126,9 @@ header {
     }
     .logo {
         margin-left: 10px;
+    }
+    .menu {
+        padding: 0;
     }
     
 }

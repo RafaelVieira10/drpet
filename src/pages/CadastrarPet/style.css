@@ -1,5 +1,6 @@
 .container-cadastro-pet {
-    max-width: 380px;
+    max-width: 400px;
+    width: 100%;
     min-height: 620px;
     position: absolute;
     top: 55%;

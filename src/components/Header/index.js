@@ -14,6 +14,15 @@ function Header() {
         nav.classList.toggle('active-nav')
     }
 
+    function aparecerSubMenu() {
+        let sub = document.querySelector(".sub-menu");
+
+        sub.classList.toggle('active-sub-menu');
+
+
+    }
+
+   
    
 
     return(
@@ -44,25 +53,20 @@ function Header() {
                             <li>
                                 <Link  to={"/"}>Home</Link>
                             </li>
+
                             <li>
                                 <Link to={"/CadastrarCliente"}>Agendamentos</Link>
                             </li>
                         
                                 <li>
-                                    <Link to={"/CadastrarPet"} className="">Meus Pets</Link>
-                                    <ul className='sub-menu'>
-                                        <li>
-                                            <Link to={"/CadastrarPet"} className="">Cadastrar</Link>
-                                        </li>
-                                        <li>
-                                            <Link to={"/EditarPet"} className="" >Editar</Link>
-                                        </li>
-                                        
-                                    </ul>
+                                    <Link to={"/EditarPet"} className="" onClick={aparecerSubMenu}>Meus Pets</Link>
                                 </li>
-                            <Link to={"/AlterarInformacoes"}>
-                                <FontAwesomeIcon icon={faCircleUser} className="icone-user"  />
-                            </Link>
+
+                             <li>   
+                                <Link to={"/AlterarInformacoes"}>
+                                    <FontAwesomeIcon icon={faCircleUser} className="icone-user"  />
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
                     
