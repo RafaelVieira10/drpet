@@ -1,7 +1,7 @@
-.container-cadastro-cliente {
+.container-editar-usuario {
     max-width: 350px;
     width: 100%;
-    min-height: 500px;
+    min-height: 450px;
     background-color: #fff;
     position: absolute;
     top: 55%;
@@ -10,12 +10,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
-.container-cadastro-cliente div {
+.container-editar-usuario div {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.container-cadastro-cliente div input {
+.container-editar-usuario div input {
     width: 80%;
     height: 50px;
     background: rgba(108, 193, 250, 0.5);
@@ -33,10 +33,8 @@
     height: 50px;
     font-weight: bold;
 }
-.container-cadastro-cliente h2 {
+.container-editar-usuario h2 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 30px;
 }
-
-

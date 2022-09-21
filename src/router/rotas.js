@@ -4,13 +4,12 @@ import Header from '../components/Header';
 // import Header from './components/Header';
 
 import Home from '../pages/Home';
-// import Login from '../pages/Login';
 import  EditarPet from '../pages/EditarPet';
 import  CadastrarPet from '../pages/CadastrarPet';
-import AlterarInformacoes from '../pages/AlterarInformacoes';
 import CadastrarCliente from '../pages/CadastrarCliente';
-// import Agendamentos '../pages/Agendamentos';
-// import MeusPets '../pages/MeusPets';
+import Perfil from '../pages/Perfil';
+import AlterarUsuario from '../pages/AlterarUsuario';
+
 
 const Rotas = () => {
     return (
@@ -20,8 +19,9 @@ const Rotas = () => {
                 <Route exact path="/"          element={ <Home /> } />
                 <Route exact path="/EditarPet"          element={ <EditarPet /> } />
                 <Route exact path="/CadastrarPet"          element={ <CadastrarPet /> } />
-                <Route exact path="/AlterarInformacoes"          element={ <AlterarInformacoes /> } />
+                <Route exact path="/Perfil"          element={ <Perfil /> } />
                 <Route exact path="/CadastrarCliente"          element={ <CadastrarCliente /> } />
+                <Route exact path="/AlterarUsuario"          element={ <AlterarUsuario /> } />
                
             </Routes>
             

@@ -63,7 +63,7 @@ function Header() {
                                 </li>
 
                              <li>   
-                                <Link to={"/AlterarInformacoes"}>
+                                <Link to={"/Perfil"}>
                                     <FontAwesomeIcon icon={faCircleUser} className="icone-user"  />
                                 </Link>
                             </li>

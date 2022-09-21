@@ -1,11 +1,11 @@
 import React from "react";
 import './style.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faGear, faLock, faPen,} from '@fortawesome/free-solid-svg-icons';
+import { faGear, faPen, faUserPen} from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 
-function AlterarInformacoes() {
+function Perfil() {
     return(
         <div className="container-alterar-infos">
             <div className="div-text-icon">
@@ -23,14 +23,9 @@ function AlterarInformacoes() {
                     <FontAwesomeIcon icon={faGear} className="icon" />
                 </Link>
 
-                <Link to={"/AlterarSenha"}>
-                    Alterar senha
-                    <FontAwesomeIcon icon={faLock} className="icon" />
-                </Link>
-
-                <Link to={"/AlterarEmail"}>
-                    Alterar E-mail
-                    <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                <Link to={"/AlterarUsuario"}>
+                    Editar conta
+                    <FontAwesomeIcon icon={faUserPen} className="icon" />
                 </Link>
 
             </div>
@@ -39,4 +34,4 @@ function AlterarInformacoes() {
     ); 
 }
 
-export default AlterarInformacoes;
+export default Perfil;
