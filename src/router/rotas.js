@@ -9,6 +9,7 @@ import  CadastrarPet from '../pages/CadastrarPet';
 import CadastrarCliente from '../pages/CadastrarCliente';
 import Perfil from '../pages/Perfil';
 import AlterarUsuario from '../pages/AlterarUsuario';
+import RegistrarProcedimentos from '../pages/RegistrarProcedimentos';
 
 
 const Rotas = () => {
@@ -22,6 +23,7 @@ const Rotas = () => {
                 <Route exact path="/Perfil"          element={ <Perfil /> } />
                 <Route exact path="/CadastrarCliente"          element={ <CadastrarCliente /> } />
                 <Route exact path="/AlterarUsuario"          element={ <AlterarUsuario /> } />
+                <Route exact path="/RegistrarProcedimentos"   element={<RegistrarProcedimentos />} />
                
             </Routes>
             

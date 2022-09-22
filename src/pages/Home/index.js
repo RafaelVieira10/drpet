@@ -14,7 +14,7 @@ function Home() {
                         estimulando a disseminação de conteúdo técnico, atualizações e a realização de cursos e especializações.
                     </p>
 
-                    <Link to={"/Agendamentos"}><button className='button-agende-home'>AGENDE AGORA</button></Link>
+                    <Link to={"/RegistrarProcedimentos"}><button className='button-agende-home'>AGENDE AGORA</button></Link>
 
                 </div>
                     <img src="assets/dogHome.png" alt="" className='img-dog-home'/>

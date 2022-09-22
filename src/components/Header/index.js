@@ -13,16 +13,6 @@ function Header() {
 
         nav.classList.toggle('active-nav')
     }
-
-    function aparecerSubMenu() {
-        let sub = document.querySelector(".sub-menu");
-
-        sub.classList.toggle('active-sub-menu');
-
-
-    }
-
-   
    
 
     return(
@@ -59,7 +49,7 @@ function Header() {
                             </li>
                         
                                 <li>
-                                    <Link to={"/EditarPet"} className="" onClick={aparecerSubMenu}>Meus Pets</Link>
+                                    <Link to={"/EditarPet"} className="">Meus Pets</Link>
                                 </li>
 
                              <li>   
