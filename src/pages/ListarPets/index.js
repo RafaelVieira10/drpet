@@ -7,16 +7,16 @@ export default function ListarPets() {
     const [pets, setPets] = useState();
 
     useEffect(() => {
-        async function getUsuarios() {
-            const response = await api.get("animais.php")
-            let pets = await response.data.animais
+        async function getPets() {
+            const response = await api.get("pets.php")
+            let pets = await response.data.pets
             setPets(pets.map((pet) => {
-                return <Pet key={pet.id} pet={pet} positionOnLocalStorage={pet.id}/>
+                return <Pet key={pet.idpet} pet={pet}/>
             }))
         }
 
-        getUsuarios()
-    })
+        getPets()
+    }, [])
 
 
     return (

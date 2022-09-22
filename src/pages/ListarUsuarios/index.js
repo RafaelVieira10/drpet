@@ -11,7 +11,7 @@ export default function ListarUsuarios() {
             const response = await api.get("usuarios.php")
             let usuarios = await response.data.users
             setUsuarios(usuarios.map((usuario) => {
-                return <Usuarios key={usuario.id} data={usuario} />
+                return <Usuarios key={usuario.idusuario} data={usuario} />
             }))
         }
 

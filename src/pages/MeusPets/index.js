@@ -10,17 +10,17 @@ export default function MeusPets() {
 
   useEffect(() => {
     async function getMeusPets() {
-      const cpf_cnpj = JSON.stringify({
-        cpf_cnpj: user.cpf_cnpj,
+      const idUsuario = JSON.stringify({
+        id_usuario: user.idusuario,
         method: "get",
       });
 
-      const response = await api.post("meus_pets.php", cpf_cnpj);
+      const response = await api.post("meus_pets.php", idUsuario);
       const pets = await response.data.pets;
 
       setMeusPets(
         pets.map((pet) => {
-          return <Pet key={pet.id} pet={pet}/>;
+          return <Pet key={pet.idpet} pet={pet}/>;
         })
       );
     }

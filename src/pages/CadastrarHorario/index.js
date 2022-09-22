@@ -4,6 +4,7 @@ import api from "../../services/api";
 
 export default function CadastrarHorario() {
   const [horariosDisponivel, setHorariosDisponivel] = useState();
+  const [mensagem, setMensagem] = useState();
   const [horario, setHorario] = useState({
     data: "",
     hora: "",
@@ -16,21 +17,25 @@ export default function CadastrarHorario() {
   async function cadastrarHorario(e) {
     e.preventDefault();
     const horarioJSON = JSON.stringify({
-      horario: `${horario.hora} ${horario.data}`,
+      horario: horario,
       method: "post",
     });
 
-    const response = await api.post("horarios_disponivel.php", horarioJSON);
-    console.log(response);
+    const response = await api.post("horarios.php", horarioJSON);
+    setMensagem(response.data.mensagem)
+    setHorario({
+      data: "",
+      hora: "",
+    });
   }
 
   useEffect(() => {
     async function getHorarios() {
-      const response = await api.get("horarios_disponivel.php");
+      const response = await api.get("horarios.php");
       const horarios = await response.data.horarios;
       setHorariosDisponivel(
         horarios.map((horario) => {
-          return <p key={horario.id}>{horario.horario}</p>;
+          return <p key={horario.idhorario}>{horario.horario}</p>;
         })
       );
     }
@@ -40,15 +45,30 @@ export default function CadastrarHorario() {
 
   return (
     <div className="CadastrarHorario">
-      <p><Link to="/adm-dashboard">Voltar</Link></p>
+      <p>
+        <Link to="/adm-dashboard">Voltar</Link>
+      </p>
       <h2>Horarios Disponiveis</h2>
       <div className="horarios_disponivel">{horariosDisponivel}</div>
       <h2>Cadastrar Horario</h2>
       <form onSubmit={cadastrarHorario}>
-        <input type="date" name="data" onChange={inputValue} required />
-        <input type="time" name="hora" onChange={inputValue} required />
+        <input
+          type="date"
+          name="data"
+          value={horario.data}
+          onChange={inputValue}
+          required
+        />
+        <input
+          type="time"
+          name="hora"
+          value={horario.hora}
+          onChange={inputValue}
+          required
+        />
         <input type="submit" value="Cadastrar" />
       </form>
+      <p>{mensagem}</p>
     </div>
   );
 }

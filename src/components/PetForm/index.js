@@ -5,15 +5,12 @@ export default function PetForm({ values, setValues, submit, btnName}) {
   const [pet, setPet] = useState(values);
   const {user} = useContext(AuthContext)
 
-  console.log(pet)
-
   function inputValue(e) {
     setPet({ ...pet, [e.target.name]: e.target.value });
   }
   
   function handleSubmit(e) {
     e.preventDefault();
-
     submit()
 
     setPet({
@@ -22,7 +19,7 @@ export default function PetForm({ values, setValues, submit, btnName}) {
       especie: "",
       cor: "",
       sexo: "",
-      cpf_cnpj_dono: user.cpf_cnpj,
+      id_usuario: user.idusuario,
     });
   }
 

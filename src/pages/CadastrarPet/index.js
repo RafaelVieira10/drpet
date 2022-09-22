@@ -13,7 +13,7 @@ export default function CadastrarPet() {
     especie: "",
     cor: "",
     sexo: "",
-    cpf_cnpj_dono: user.cpf_cnpj,
+    id_usuario: user.idusuario,
   });
 
   const [mensagemCadastroPet, setMensagemCadastroPet] = useState();
@@ -26,6 +26,7 @@ export default function CadastrarPet() {
 
     try {
       const response = await api.post("meus_pets.php", petJSON);
+      console.log(response)
       if (response.data) {
         if (response.data.erro) {
           setMensagemCadastroPet(response.data.mensagem);
@@ -43,7 +44,7 @@ export default function CadastrarPet() {
       especie: "",
       cor: "",
       sexo: "",
-      cpf_cnpj_dono: user.cpf_cnpj,
+      id_usuario: user.idusuario,
     });
   }
 

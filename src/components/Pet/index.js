@@ -7,9 +7,11 @@ export default function Pet({ pet }) {
 
   async function deletePet() {
     const petID = JSON.stringify({
-      id: `${pet.id}`,
+      idpet: `${pet.idpet}`,
       method: "delete",
     });
+
+    console.log(petID)
 
     const response = await api.post("meus_pets.php", petID);
     setMensagemDelete(response.data.mensagem);
@@ -22,9 +24,8 @@ export default function Pet({ pet }) {
       <p>Espécie: {pet.especie}</p>
       <p>Cor: {pet.cor}</p>
       <p>Sexo: {pet.sexo}</p>
-      <p>CPF / CNPJ: {pet.cpf_cnpj_dono}</p>
       <div>
-        <Link to={`/dashboard/meus-pets/editar/${pet.id}`}>
+        <Link to={`/dashboard/meus-pets/editar/${pet.idpet}`}>
           Editar
         </Link>
         <button onClick={deletePet}>Excluir</button>

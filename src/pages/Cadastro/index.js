@@ -21,6 +21,8 @@ export default function Cadastro() {
     e.preventDefault();
     const userJSON = JSON.stringify({ user });
 
+    console.log(userJSON)
+
     try {
       const response = await api.post("cadastrar.php", userJSON);
       if (response.data) {

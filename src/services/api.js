@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/drpet_apis/",
+  baseURL: "http://localhost/drpet-apis/",
 });
 
 export default api;
