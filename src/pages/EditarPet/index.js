@@ -116,6 +116,7 @@ export default function EditarPet() {
         </form>
       </div>
       <p>{mensagem}</p>
+      <p><button onClick={() => navigate(-1)}>Voltar</button></p>
     </div>
   );
 }

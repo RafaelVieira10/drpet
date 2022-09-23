@@ -14,6 +14,7 @@ import ListarPets from "./pages/ListarPets";
 import CadastrarHorario from "./pages/CadastrarHorario";
 import AdmAgendamentos from "./pages/AdmAgendamentos";
 import CriarAgendamento from "./pages/CriarAgendamento";
+import EditarUsuario from "./pages/EditarUsuario";
 
 export default function Rotas() {
   function Private({ children }) {
@@ -93,6 +94,15 @@ export default function Rotas() {
           />
           <Route
             exact
+            path="/dashboard/editar-dados"
+            element={
+              <Private>
+                <EditarUsuario />
+              </Private>
+            }
+          />
+          <Route
+            exact
             path="/adm-dashboard"
             element={
               <PrivateADM>
@@ -115,6 +125,15 @@ export default function Rotas() {
             element={
               <PrivateADM>
                 <ListarPets />
+              </PrivateADM>
+            }
+          />
+          <Route
+            exact
+            path="/adm-dashboard/pets/editar/:id"
+            element={
+              <PrivateADM>
+                <EditarPet />
               </PrivateADM>
             }
           />
