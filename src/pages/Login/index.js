@@ -19,7 +19,8 @@ export default function Login() {
 
   async function handleLogin(e) {
     e.preventDefault();
-    const loginJSON = JSON.stringify({ user });
+    const loginJSON = JSON.stringify(user);
+    console.log(loginJSON)
     try {
       const response = await api.put("login.php", loginJSON);
       if (!response.data.erro) {

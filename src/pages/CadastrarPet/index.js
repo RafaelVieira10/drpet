@@ -19,13 +19,10 @@ export default function CadastrarPet() {
   const [mensagemCadastroPet, setMensagemCadastroPet] = useState();
 
   async function cadastrar() {
-    const petJSON = JSON.stringify({
-      pet: pet,
-    });
+    const petJSON = JSON.stringify(pet);
 
     try {
       const response = await api.post("pets.php", petJSON);
-      console.log(response)
       if (response.data) {
         if (response.data.erro) {
           setMensagemCadastroPet(response.data.mensagem);

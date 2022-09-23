@@ -19,11 +19,8 @@ export default function EditarUsuario() {
 
   async function editarPet(e) {
     e.preventDefault();
+    const editUserJSON = JSON.stringify(editUser);
 
-    const editUserJSON = JSON.stringify({
-      user: editUser,
-    });
-    console.log(editUserJSON)
     const response = await api.put("usuarios.php", editUserJSON);
     console.log(response)
     setMensagem(response.data.mensagem)

@@ -16,9 +16,7 @@ export default function CadastrarHorario() {
 
   async function cadastrarHorario(e) {
     e.preventDefault();
-    const horarioJSON = JSON.stringify({
-      horario: horario,
-    });
+    const horarioJSON = JSON.stringify(horario);
 
     const response = await api.post("horarios.php", horarioJSON);
     setMensagem(response.data.mensagem)

@@ -19,11 +19,7 @@ export default function Cadastro() {
 
   async function cadastrar(e) {
     e.preventDefault();
-    const userJSON = JSON.stringify({ 
-      user: user,
-    });
-
-    console.log(userJSON)
+    const userJSON = JSON.stringify(user);
 
     try {
       const response = await api.post("usuarios.php", userJSON);

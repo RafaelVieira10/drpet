@@ -23,11 +23,8 @@ export default function EditarPet() {
 
   async function editarPet(e) {
     e.preventDefault();
-
-    const editPetJSON = JSON.stringify({
-      pet: editPet,
-    });
-
+    const editPetJSON = JSON.stringify(editPet);
+    
     const response = await api.put("pets.php", editPetJSON);
     setMensagem(response.data.mensagem)
   }
