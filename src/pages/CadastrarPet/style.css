@@ -2,13 +2,10 @@
     max-width: 400px;
     width: 100%;
     min-height: 620px;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .content-cadastro  {
     background-color: #fff;
@@ -48,6 +45,15 @@
     margin-left: 100px;
     margin-bottom: -300px;
 }
+.container-cadastro-pet img{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-left: 250px;
+}
+
+
+
 
 @media (max-width: 1200px) {
     .img-dog-cadastro {

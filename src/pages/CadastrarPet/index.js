@@ -16,7 +16,9 @@ function CadastrarPet() {
                 <button type="submit" className="button-cadastro">CADASTRAR</button>
             </div>
 
-                <img src="/assets/cachorro-cadastrar.png" alt="" className="img-dog-cadastro" ></img>
+                {/* <div className="div-img"> */}
+                    <img src="/assets/cat-dog-amico.png" alt="" className="img-dog-cadastro" ></img>
+                {/* </div> */}
         </div>
     );
 }

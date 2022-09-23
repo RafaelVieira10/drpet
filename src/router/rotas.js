@@ -10,6 +10,7 @@ import CadastrarCliente from '../pages/CadastrarCliente';
 import Perfil from '../pages/Perfil';
 import AlterarUsuario from '../pages/AlterarUsuario';
 import RegistrarProcedimentos from '../pages/RegistrarProcedimentos';
+import ProcedimentosEfetuados from '../pages/ProcedimentosEfetuados';
 
 
 const Rotas = () => {
@@ -24,6 +25,7 @@ const Rotas = () => {
                 <Route exact path="/CadastrarCliente"          element={ <CadastrarCliente /> } />
                 <Route exact path="/AlterarUsuario"          element={ <AlterarUsuario /> } />
                 <Route exact path="/RegistrarProcedimentos"   element={<RegistrarProcedimentos />} />
+                <Route exact path="/ProcedimentosEfetuados"   element={<ProcedimentosEfetuados />} />
                
             </Routes>
             

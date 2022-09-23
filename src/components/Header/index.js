@@ -45,11 +45,11 @@ function Header() {
                             </li>
 
                             <li>
-                                <Link to={"/CadastrarCliente"}>Agendamentos</Link>
+                                <Link to={"/CadastrarPet"}>Agendamentos</Link>
                             </li>
                         
                                 <li>
-                                    <Link to={"/EditarPet"} className="">Meus Pets</Link>
+                                    <Link to={"/ProcedimentosEfetuados"} className="">Meus Pets</Link>
                                 </li>
 
                              <li>   
