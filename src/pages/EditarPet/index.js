@@ -26,23 +26,17 @@ export default function EditarPet() {
 
     const editPetJSON = JSON.stringify({
       pet: editPet,
-      method: "update",
     });
 
-    const response = await api.post("meus_pets.php", editPetJSON);
+    const response = await api.put("pets.php", editPetJSON);
     setMensagem(response.data.mensagem)
-    console.log(response);
   }
 
   useEffect(() => {
     async function getPet() {
-      const idPetJSON = JSON.stringify({
-        idpet: id,
-        method: "get",
-      });
 
-      const response = await api.post("pets.php", idPetJSON);
-      const pet = await response.data.pet[0];
+      const response = await api.get(`pets.php/${id}`);
+      const pet = await response.data;
 
       if (!response.data.erro) {
         if (pet.id_usuario === user.idusuario || adm) {

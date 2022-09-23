@@ -7,16 +7,16 @@ export default function CriarAgendamento() {
 
   useEffect(() => {
     async function getHorarios() {
-      const response = await api.get("horarios_disponivel.php");
-      let horarios = await response.data.horarios;
+      const response = await api.get("horarios.php");
+      let horarios = await response.data;
 
       setHorariosDisponivel(
         <select>
           <option value="Selecione">Selecione</option>
           {horarios.map((horario) => {
             return (
-              <option key={horario.id} value={horario.horario}>
-                {horario.horario}
+              <option key={horario.idhorario} value={`${horario.hora} ${horario.data}`}>
+                {horario.hora} {horario.data}
               </option>
             );
           })}
@@ -25,7 +25,7 @@ export default function CriarAgendamento() {
     }
 
     getHorarios();
-  });
+  }, []);
 
   return (
     <div className="CriarAgeandamento">

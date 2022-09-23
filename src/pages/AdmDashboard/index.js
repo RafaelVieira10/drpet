@@ -1,21 +1,15 @@
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth";
 
 export default function AdmDashboard() {
   const { logout } = useContext(AuthContext);
-  const navigate = useNavigate();
-
-  function Logout() {
-    logout();
-    navigate("/login");
-  }
-
+  
   return (
     <div>
       <h1>Logado ADM</h1>
       <p>
-        <button onClick={Logout}>Sair</button>
+        <button onClick={() => logout()}>Sair</button>
       </p>
       <p>
         <Link to="/adm-dashboard/usuarios">Listar Usuários</Link>

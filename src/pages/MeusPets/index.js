@@ -10,13 +10,8 @@ export default function MeusPets() {
 
   useEffect(() => {
     async function getMeusPets() {
-      const idUsuario = JSON.stringify({
-        id_usuario: user.idusuario,
-        method: "get",
-      });
-
-      const response = await api.post("meus_pets.php", idUsuario);
-      const pets = await response.data.pets;
+      const response = await api.get(`meus_pets.php/${user.idusuario}`);
+      const pets = await response.data;
 
       setMeusPets(
         pets.map((pet) => {

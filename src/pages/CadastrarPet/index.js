@@ -21,11 +21,10 @@ export default function CadastrarPet() {
   async function cadastrar() {
     const petJSON = JSON.stringify({
       pet: pet,
-      method: "post",
     });
 
     try {
-      const response = await api.post("meus_pets.php", petJSON);
+      const response = await api.post("pets.php", petJSON);
       console.log(response)
       if (response.data) {
         if (response.data.erro) {

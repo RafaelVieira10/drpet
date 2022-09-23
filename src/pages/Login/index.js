@@ -21,7 +21,7 @@ export default function Login() {
     e.preventDefault();
     const loginJSON = JSON.stringify({ user });
     try {
-      const response = await api.post("login.php", loginJSON);
+      const response = await api.put("login.php", loginJSON);
       if (!response.data.erro) {
         login(response.data.user[0])
       } else {

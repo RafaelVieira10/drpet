@@ -6,14 +6,7 @@ export default function Pet({ pet }) {
   const [mensagemDelete, setMensagemDelete] = useState();
 
   async function deletePet() {
-    const petID = JSON.stringify({
-      idpet: `${pet.idpet}`,
-      method: "delete",
-    });
-
-    console.log(petID)
-
-    const response = await api.post("meus_pets.php", petID);
+    const response = await api.delete(`pets.php/${pet.idpet}`);
     setMensagemDelete(response.data.mensagem);
   }
 

@@ -9,15 +9,14 @@ export default function ListarUsuarios() {
     useEffect(() => {
         async function getUsuarios() {
             const response = await api.get("usuarios.php")
-            let usuarios = await response.data.users
+            console.log(response)
+            let usuarios = await response.data
             setUsuarios(usuarios.map((usuario) => {
                 return <Usuarios key={usuario.idusuario} data={usuario} />
             }))
         }
-
         getUsuarios()
-    })
-
+    }, [])
 
     return (
         <div className="ListarUsuarios">

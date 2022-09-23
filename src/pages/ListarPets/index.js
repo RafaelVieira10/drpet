@@ -9,12 +9,12 @@ export default function ListarPets() {
     useEffect(() => {
         async function getPets() {
             const response = await api.get("pets.php")
-            let pets = await response.data.pets
+            let pets = await response.data
             setPets(pets.map((pet) => {
                 return <Pet key={pet.idpet} pet={pet}/>
             }))
         }
-
+        
         getPets()
     }, [])
 

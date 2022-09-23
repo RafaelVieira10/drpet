@@ -18,7 +18,6 @@ export default function CadastrarHorario() {
     e.preventDefault();
     const horarioJSON = JSON.stringify({
       horario: horario,
-      method: "post",
     });
 
     const response = await api.post("horarios.php", horarioJSON);
@@ -32,16 +31,16 @@ export default function CadastrarHorario() {
   useEffect(() => {
     async function getHorarios() {
       const response = await api.get("horarios.php");
-      const horarios = await response.data.horarios;
+      const horarios = await response.data;
       setHorariosDisponivel(
         horarios.map((horario) => {
-          return <p key={horario.idhorario}>{horario.horario}</p>;
+          return <p key={horario.idhorario}>{horario.hora} {horario.data}</p>;
         })
       );
     }
 
     getHorarios();
-  });
+  }, [horario]);
 
   return (
     <div className="CadastrarHorario">
