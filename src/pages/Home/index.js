@@ -22,7 +22,6 @@ function Home() {
         // </div>
 
         <div className='container-home'>
-            
             <div className='content-home'>
                 <div className='div-text-home'>
                     <h2>DR PET</h2>
@@ -31,14 +30,21 @@ function Home() {
                     </p>
                     <Link>Agendar</Link>
                 </div>
-
-                {/* <div className='div-img-home'> */}
                     <img src='./assets/medicine-bro.png' alt='' />
-                {/* </div> */}
             </div>
-            {/* <div className='teste'>
-                Olá
-            </div> */}
+
+            {/* <section>
+                <div className='container-sobre'>
+                    <div>
+wdas
+                    </div>
+
+                    <div>
+asdsa
+                    </div>
+                </div>
+            </section> */}
+            
         </div>
         
     );

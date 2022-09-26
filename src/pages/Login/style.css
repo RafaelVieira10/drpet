@@ -1,0 +1,110 @@
+.containerLogin {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formsLogin {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    border: 1px solid black;
+    width: 50vw;
+    max-width: 50vw;
+    height: 510px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.tituloLogin {
+  color: #2f95f2;
+}
+
+.container_formsLogin{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+}
+
+.inputLogin {
+  width: 80%;
+  margin-top: 15px;
+  height: 52px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.botao_login {
+  width: 85%;
+  height: 52px;
+  background: #4ba1df;
+  border: 2px solid #4ba1df;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #ffff;
+  margin-top: 50px;
+}
+
+.cadastrar {
+  width: 90px;
+  height: 18px;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  margin-left: 4vw;
+  margin-top: 10px;
+}
+
+.divDogLogin{
+  width: 70%;
+  height: 509.5px;
+  justify-content: flex-end;
+  display: flex;
+  background-image: url("../../../public/assets/dogLogin.png");
+   
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 1080px) {
+  .divDogLogin{
+    display: none;
+  }
+
+  .container_formsLogin{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  
+  }
+
+  .formsLogin{
+    max-width: 90vw;
+  }
+
+  .cadastrar{
+    font-size: 15px;
+  }
+
+  .inputLogin {
+    font-size: 15px;
+  }
+
+  .formsLogin{
+    width: 100%;
+  }
+
+  .containerLogin{
+    max-width: 100%;
+  }
+}

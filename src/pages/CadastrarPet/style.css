@@ -1,11 +1,10 @@
 .container-cadastro-pet {
     max-width: 400px;
-    width: 100%;
+    width: 100vw;
     min-height: 620px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .content-cadastro  {
     background-color: #fff;

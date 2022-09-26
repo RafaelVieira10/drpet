@@ -2,12 +2,8 @@
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    width: 330px;
-    min-height: 370px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 330px;
+    height: 350px;
 
 }
 .div-text-icon {
@@ -23,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0 20px 0 20px;
 }
 .div-buttons a {
     background: rgba(108, 193, 250, 0.5);

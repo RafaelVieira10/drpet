@@ -1,6 +1,6 @@
 header {
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     background-color: #ffff;
     position: absolute;
@@ -112,6 +112,9 @@ header {
     }
     ul a svg{
         margin-top: 200px;
+    }
+    .dp-menu {
+        z-index: 9999;
     }
     .dp-menu ul {
         position: absolute;

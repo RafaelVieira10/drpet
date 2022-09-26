@@ -1,0 +1,94 @@
+.containerVisualizarAgendar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardVisualizarAgendar{
+    width: 110%;
+    height: 228px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.containerVisualizarDatas{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.retanguloVisualizarData {
+    width: 159px;
+    text-align: center;
+    height: 30px;
+    background: #44EBA0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.Visualizardata {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.containerInputVisualizar{
+    width: 50%;
+}
+
+.inputVisualizarAgendar{
+    background-color: #6CC1FA;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    width: 444px;
+    height: 34px;
+    border: #6CC1FA;
+    /* color: #808080; */
+    padding: 5px;
+    padding-left: 25px;
+    outline: none;
+}
+
+.botaoVisualizar{
+    color: red;
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 900px) {
+    .containerInputVisualizar{
+        width: 90%;
+    }
+    
+    .cardVisualizarAgendar{
+        display: flex;
+        width: 100%;
+    }
+
+    .inputVisualizarAgendar{
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerInputVisualizar{
+        height: 70%;
+    }
+
+    .cardVisualizarAgendar{
+        height: 100%;
+    }
+}

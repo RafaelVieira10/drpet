@@ -1,0 +1,92 @@
+.containerAgendar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardAgendar{
+    width: 866px;
+    height: 228px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    
+}
+
+.containerDatas{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.retanguloData {
+    width: 159px;
+    text-align: center;
+    height: 30px;
+    background: rgba(101, 101, 101, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+   align-items: center; 
+}
+
+
+.DivdogAgendar{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+} 
+
+.dogAgendar{
+    width: 222px;
+    height: 222px;
+}
+
+@media (max-width: 900px) {
+    .containerAgendar{
+        height: 115vh;
+        background-color: #D7FFFF;
+    }
+    
+    .cardAgendar{
+        width: 60%;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .containerDatas{
+        align-items: center;
+
+        margin: 0;
+        width: 100%;
+    }
+
+    .DivdogAgendar{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 370px) {
+    .DivdogAgendar{
+        display: none;
+    }
+
+    .cardAgendar{
+        width: 80vw;
+    }
+}
