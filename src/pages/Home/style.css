@@ -56,8 +56,8 @@ button {
 /* parte 2 */
 
 .container-home {
-    position: absolute;
-    top: 70px;
+    /* position: absolute;
+    top: 70px; */
     width: 100%;
     height: 480px;
 }

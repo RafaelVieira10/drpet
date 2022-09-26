@@ -32,6 +32,9 @@
     width: 85%;
     height: 50px;
     font-weight: bold;
+    margin-top: 35px;
+   cursor: pointer; 
+   border: none;
 }
 .container-editar-usuario h2 {
     text-align: center;

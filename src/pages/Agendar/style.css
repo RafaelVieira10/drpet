@@ -66,6 +66,7 @@
         height: auto;
         flex-wrap: wrap;
         margin: 0;
+        margin-top: 350px;
     }
 
     .containerDatas{
@@ -88,5 +89,6 @@
 
     .cardAgendar{
         width: 80vw;
+        margin-top: 0;
     }
 }

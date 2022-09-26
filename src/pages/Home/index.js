@@ -28,7 +28,7 @@ function Home() {
                     <p>Médicos veterinários de confiança e procedimentos desenvolvidos com carinho visando o bem-estar do seu bichinho, 
                         feito através de um atendimento domiciliar.
                     </p>
-                    <Link>Agendar</Link>
+                    <Link to={"/Cadastrar"}>Agendar</Link>
                 </div>
                     <img src='./assets/medicine-bro.png' alt='' />
             </div>

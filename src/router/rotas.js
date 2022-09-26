@@ -12,6 +12,12 @@ import AlterarUsuario from '../pages/AlterarUsuario';
 import RegistrarProcedimentos from '../pages/RegistrarProcedimentos';
 import ProcedimentosEfetuados from '../pages/ProcedimentosEfetuados';
 import ListaUsuarios from '../pages/ListaUsuarios';
+import Cadastrar from '../pages/Cadastrar';
+import ListarAnimais from '../pages/ListarAnimais';
+import VisualizarAgendar from '../pages/VisualizarAgendar';
+import Login from '../pages/Login';
+import Agendar from '../pages/Agendar';
+import MeusPets from '../pages/MeusPets';
 
 
 const Rotas = () => {
@@ -27,7 +33,14 @@ const Rotas = () => {
                 <Route exact path="/AlterarUsuario"          element={ <AlterarUsuario /> } />
                 <Route exact path="/RegistrarProcedimentos"   element={<RegistrarProcedimentos />} />
                 <Route exact path="/ProcedimentosEfetuados"   element={<ProcedimentosEfetuados />} />
+                <Route exact path="/Cadastrar"   element={<Cadastrar />} />
+                <Route exact path="/ListarAnimais"   element={<ListarAnimais />} />
                 <Route exact path="/ListaUsuarios"   element={<ListaUsuarios />} />
+                <Route exact path="/Login"   element={<Login />} />
+                <Route exact path="/VisualizarAgendar"   element={<VisualizarAgendar />} />
+                <Route exact path="/Agendar"   element={<Agendar />} />
+                <Route exact path="/MeusPets"   element={<MeusPets />} />
+
             </Routes>
             
     </BrowserRouter>

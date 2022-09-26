@@ -38,18 +38,20 @@
     border-radius: 10px;
     font-size: 15px;
     padding-left: 10px;
+    outline: none;
   }
   
   .botao {
-    width: 80%;
+    width: 83%;
     height: 52px;
     margin-top: 50px;
     background: #4ba1df;
     border: 2px solid #4ba1df;
     border-radius: 10px;
     font-family: "Roboto";
-    font-size: 15px;
+    font-size: 16px;
     color: #ffff;
+    text-transform: uppercase;
   }
 
   .divDog {
@@ -62,6 +64,11 @@
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  }
+  .link-login {
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
   }
 
 

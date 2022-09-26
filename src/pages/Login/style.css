@@ -39,6 +39,7 @@
   border-radius: 10px;
   font-size: 15px;
   padding-left: 10px;
+  outline: none;
 }
 
 .botao_login {
@@ -47,20 +48,22 @@
   background: #4ba1df;
   border: 2px solid #4ba1df;
   border-radius: 10px;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-size: 16px;
   color: #ffff;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
 .cadastrar {
-  width: 90px;
+  width: 85%;
   height: 18px;
-  text-decoration: none;
   color: #000000;
   display: flex;
-  margin-left: 4vw;
-  margin-top: 10px;
+  /* margin-left: 4vw; */
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .divDogLogin{

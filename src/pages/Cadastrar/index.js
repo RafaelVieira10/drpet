@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function Cadastrar() {
@@ -28,8 +29,15 @@ export default function Cadastrar() {
             placeholder="Digite sua senha"
           />
           <button className="botao">Cadastrar</button>
+
+          <Link to={"/Login"} className="link-login">
+            Login
+          </Link>
         </div>
-        <div className="divDog" />
+        <div className="divDog">
+          {/* <img src="/assets/dogCadastrar.png" alt=""></img> */}
+        </div>
+        
       </form>
     </div>
   );
