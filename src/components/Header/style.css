@@ -79,22 +79,16 @@ header {
     .menu-mobile {
         display: block;
     }
-    .active-menu {
-        display: block;
-        width: 100vw;
-    }
     nav {
         position: absolute;
         top: 8vh;
-        right: 0;
-        width: 100vw;
+        left: 0;
+        width: 70vw;
         height: 100vh;
         display: block;
-        transition: transform 0.3s ease-in;
         display: none;
-        z-index: 1000;
-       background-color: #fff;
-        
+        background-color: #fff;
+  
     }
     .nav a {
         padding: 0;
