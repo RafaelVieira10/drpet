@@ -30,6 +30,7 @@ export default function CadastrarHorario() {
     async function getHorarios() {
       const response = await api.get("horarios.php");
       const horarios = await response.data;
+
       setHorariosDisponivel(
         horarios.map((horario) => {
           return <p key={horario.idhorario}>{horario.hora} {horario.data}</p>;

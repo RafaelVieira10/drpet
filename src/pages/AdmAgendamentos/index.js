@@ -1,11 +1,48 @@
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import api from "../../services/api";
 
 export default function AdmAgendamentos() {
+  const [agendamentos, setAgendamentos] = useState();
+
+  useEffect(() => {
+    async function getAgendamentos() {
+      const response = await api.get("agendamentos.php");
+      let agendamentos = response.data;
+
+      setAgendamentos(
+        <div>
+          {agendamentos.map((agendamento) => {
+            return (
+              <div key={agendamento.idagendamento}>
+                <p>
+                  Horario: {agendamento.horario} {agendamento.data}
+                </p>
+                <p>Cliente: {agendamento.nome}</p>
+                <p>Pet: {agendamento.nome_pet}</p>
+                <p>Status: {agendamento.status}</p>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+
+    getAgendamentos();
+  }, []);
+
   return (
     <div>
-      <p><Link to="/adm-dashboard">Voltar</Link></p>
+      <p>
+        <Link to="/adm-dashboard">Voltar</Link>
+      </p>
       <h1>Agendamentos</h1>
-      <p><Link to="/adm-dashboard/agendamentos/criar-agendamento">Criar agendamento</Link></p>
+      {agendamentos}
+      <p>
+        <Link to="/adm-dashboard/agendamentos/criar-agendamento">
+          Criar agendamento
+        </Link>
+      </p>
     </div>
-  )
+  );
 }

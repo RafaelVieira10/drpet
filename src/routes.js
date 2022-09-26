@@ -15,6 +15,7 @@ import CadastrarHorario from "./pages/CadastrarHorario";
 import AdmAgendamentos from "./pages/AdmAgendamentos";
 import CriarAgendamento from "./pages/CriarAgendamento";
 import EditarUsuario from "./pages/EditarUsuario";
+import Agendamentos from "./pages/Agendamentos";
 
 export default function Rotas() {
   function Private({ children }) {
@@ -98,6 +99,24 @@ export default function Rotas() {
             element={
               <Private>
                 <EditarUsuario />
+              </Private>
+            }
+          />
+          <Route
+            exact
+            path="/dashboard/agendamentos"
+            element={
+              <Private>
+                <Agendamentos />
+              </Private>
+            }
+          />
+          <Route
+            exact
+            path="/dashboard/agendamentos/criar-agendamento"
+            element={
+              <Private>
+                <CriarAgendamento />
               </Private>
             }
           />

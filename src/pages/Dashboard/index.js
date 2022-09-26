@@ -11,6 +11,7 @@ export default function Dashboard() {
       <p><button onClick={logout}>Sair</button></p>
       <p><Link to="/dashboard/meus-pets">Listar meus pets</Link></p>
       <p><Link to="/dashboard/editar-dados">Editar dados</Link></p>
+      <p><Link to="/dashboard/agendamentos">Agendamentos</Link></p>
     </div>
   )
 }
