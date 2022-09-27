@@ -53,6 +53,10 @@
     width: 70px;
     font-weight: 700;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
 }
 
 #apagar_MeusPets{

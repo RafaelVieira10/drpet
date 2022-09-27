@@ -1,4 +1,5 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 
 export default function MeusPets(props) {
     return (
@@ -13,7 +14,7 @@ export default function MeusPets(props) {
                         <p>Cor:</p>
 
                         <div className='botao_MeusPets'>
-                            <button id='editar_MeusPets'>Editar</button>
+                            <Link to={"/EditarPet"} id='editar_MeusPets'>Editar</Link>
                             <button id="apagar_MeusPets">Apagar</button>
                         </div>
                     </div>
@@ -29,7 +30,7 @@ export default function MeusPets(props) {
                         <p>Cor:</p>
 
                         <div className='botao_MeusPets'>
-                            <button id='editar_MeusPets'>Editar</button>
+                            <Link to={"/EditarPet"} id='editar_MeusPets'>Editar</Link>
                             <button id="apagar_MeusPets">Apagar</button>
                         </div>
                     </div>
@@ -45,7 +46,7 @@ export default function MeusPets(props) {
                         <p>Cor:</p>
 
                         <div className='botao_MeusPets'>
-                            <button id='editar_MeusPets'>Editar</button>
+                            <Link to={"/EditarPet"} id='editar_MeusPets'>Editar</Link>
                             <button id="apagar_MeusPets">Apagar</button>
                         </div>
                     </div>
@@ -61,7 +62,7 @@ export default function MeusPets(props) {
                         <p>Cor:</p>
 
                         <div className='botao_MeusPets'>
-                            <button id='editar_MeusPets'>Editar</button>
+                            <Link to={"/EditarPet"} id='editar_MeusPets'>Editar</Link>
                             <button id="apagar_MeusPets">Apagar</button>
                         </div>
                     </div>
