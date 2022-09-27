@@ -16,6 +16,7 @@ import AdmAgendamentos from "./pages/AdmAgendamentos";
 import CriarAgendamento from "./pages/CriarAgendamento";
 import EditarUsuario from "./pages/EditarUsuario";
 import Agendamentos from "./pages/Agendamentos";
+import FinalizarConsulta from "./pages/FinalizarConsulta";
 
 export default function Rotas() {
   function Private({ children }) {
@@ -180,6 +181,15 @@ export default function Rotas() {
             element={
               <PrivateADM>
                 <CriarAgendamento />
+              </PrivateADM>
+            }
+          />
+          <Route
+            exact
+            path="/adm-dashboard/agendamentos/finalizar-consulta/:idagendamento"
+            element={
+              <PrivateADM>
+                <FinalizarConsulta />
               </PrivateADM>
             }
           />

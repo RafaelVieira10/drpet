@@ -37,7 +37,6 @@ export default function EditarUsuario() {
           setEditUser({
             nome: usuario.nome,
             email: usuario.email,
-            senha: usuario.senha,
             idusuario: usuario.idusuario
           });
         } else {
