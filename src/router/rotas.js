@@ -18,6 +18,7 @@ import VisualizarAgendar from '../pages/VisualizarAgendar';
 import Login from '../pages/Login';
 import Agendar from '../pages/Agendar';
 import MeusPets from '../pages/MeusPets';
+import Pet from '../pages/Pet';
 
 
 const Rotas = () => {
@@ -40,6 +41,7 @@ const Rotas = () => {
                 <Route exact path="/VisualizarAgendar"   element={<VisualizarAgendar />} />
                 <Route exact path="/Agendar"   element={<Agendar />} />
                 <Route exact path="/MeusPets"   element={<MeusPets />} />
+                <Route exact path="/Pet"   element={<Pet />} />
 
             </Routes>
             

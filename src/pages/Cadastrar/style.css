@@ -1,9 +1,10 @@
 .container {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   
   .forms {
@@ -106,5 +107,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .container {
+    height: 200vh;
   }
 }

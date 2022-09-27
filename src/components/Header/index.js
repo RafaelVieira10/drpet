@@ -49,7 +49,7 @@ function Header() {
                             </li>
                         
                                 <li>
-                                    <Link to={"/MeusPets"} className="">Meus Pets</Link>
+                                    <Link to={"/Pet"} className="">Pets</Link>
                                 </li>
 
                              <li>   

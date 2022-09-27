@@ -28,23 +28,10 @@ function Home() {
                     <p>Médicos veterinários de confiança e procedimentos desenvolvidos com carinho visando o bem-estar do seu bichinho, 
                         feito através de um atendimento domiciliar.
                     </p>
-                    <Link to={"/Cadastrar"}>Agendar</Link>
+                    <Link to={"/Login"}>Agendar</Link>
                 </div>
                     <img src='./assets/medicine-bro.png' alt='' />
-            </div>
-
-            {/* <section>
-                <div className='container-sobre'>
-                    <div>
-wdas
-                    </div>
-
-                    <div>
-asdsa
-                    </div>
-                </div>
-            </section> */}
-            
+            </div>            
         </div>
         
     );
