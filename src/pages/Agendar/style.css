@@ -91,4 +91,8 @@
         width: 80vw;
         margin-top: 0;
     }
+    .retanguloData {
+        width: 80%;
+        min-height: 40px;
+    }
 }
