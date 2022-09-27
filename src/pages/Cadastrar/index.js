@@ -4,7 +4,7 @@ import "./style.css";
 
 export default function Cadastrar() {
   return (
-    <div className="container">
+    <div className="containerCadastrar">
       <form className="forms">
         <div className="container_forms">
           <h1 className="titulo">CADASTRE-SE</h1>
@@ -35,7 +35,7 @@ export default function Cadastrar() {
           </Link>
         </div>
         <div className="divDog">
-          {/* <img src="/assets/dogCadastrar.png" alt=""></img> */}
+          <img id='DogCadastrar' src="/assets/dogCadastrar.png" alt=""></img>
         </div>
         
       </form>
