@@ -36,6 +36,7 @@
     border: none;
     background: #44EBA0;
     margin-top: 20px;
+    cursor: pointer;
 }
 .content-cadastro h2 {
     text-align: center;

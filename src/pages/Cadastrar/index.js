@@ -30,12 +30,12 @@ export default function Cadastrar() {
           />
           <button className="botao">Cadastrar</button>
 
-          <Link to={"/Login"} className="link-login">
+          <Link to={"/login"} className="link-login">
             Login
           </Link>
         </div>
         <div className="divDog">
-          {/* <img src="/assets/dogCadastrar.png" alt=""></img> */}
+          <img src="/assets/dogCadastrar.png" alt=""></img>
         </div>
         
       </form>

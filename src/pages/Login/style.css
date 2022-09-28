@@ -48,11 +48,11 @@
   background: #4ba1df;
   border: 2px solid #4ba1df;
   border-radius: 10px;
-  /* font-family: "Roboto"; */
   font-size: 16px;
   color: #ffff;
   margin-top: 50px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .cadastrar {

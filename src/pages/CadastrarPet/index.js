@@ -13,12 +13,11 @@ function CadastrarPet() {
                 <input className="input-cadastro"  name="" placeholder="Cor"></input>
                 <input className="input-cadastro"  name="" placeholder="CPF (dono)"></input>
 
-                <button type="submit" className="button-cadastro">CADASTRAR</button>
+                <button type="submit" className="button-cadastro">CADASTRAR</button>  
             </div>
 
-                {/* <div className="div-img"> */}
-                    <img src="/assets/cat-dog-amico.png" alt="" className="img-dog-cadastro" ></img>
-                {/* </div> */}
+                <img src="/assets/cat-dog-amico.png" alt="" className="img-dog-cadastro" ></img>
+                    
         </div>
     );
 }
