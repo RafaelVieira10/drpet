@@ -1,10 +1,10 @@
+import Rotas from "./routes";
 import './App.css';
-import Rotas from './router/rotas';
 
 function App() {
   return (
     <div className="App">
-        <Rotas />
+      <Rotas />
     </div>
   );
 }

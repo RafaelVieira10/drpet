@@ -1,0 +1,55 @@
+.container-pet {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: white; */
+}
+.container-pet h2 {
+    padding: 5px;
+}
+.container-pet .card-meus-pets {
+    background-color: #fff;
+    width: 290px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.container-pet .card-adicionar-pets {
+    background-color: #fff;
+    width: 290px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.container-pet .card-meus-pets {
+    background-color: #fff;
+    width: 290px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.card-meus-pets .icon {
+    margin: 0;
+}
+.card-adicionar-pets  .icon a {
+    color: #4EDF4B;
+}
+.card-adicionar-pets .icon {
+    margin: 0;
+}
+.icone-logo-pet {
+    font-size: 38px;
+}

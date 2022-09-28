@@ -1,26 +1,63 @@
-import React from "react";
-import './style.css';
+import { useState, useContext } from "react";
+import { AuthContext } from "../../context/auth";
+import { Link } from "react-router-dom";
+import api from "../../services/api";
+import PetForm from "../../components/PetForm";
 
-function CadastrarPet() {
-    return(
-        <div className="container-cadastro-pet">
-            <div className="content-cadastro">
-            <h2>Cadastre seu Pet</h2>
-                <input className="input-cadastro"  name="" placeholder="Nome"></input>
-                <input className="input-cadastro"  name="" placeholder="Raça"></input>
-                <input className="input-cadastro"  name="" placeholder="Espécie"></input>
-                <input className="input-cadastro"  name="" placeholder="Sexo"></input>
-                <input className="input-cadastro"  name="" placeholder="Cor"></input>
-                <input className="input-cadastro"  name="" placeholder="CPF (dono)"></input>
+export default function CadastrarPet() {
+  const { user } = useContext(AuthContext);
 
-                <button type="submit" className="button-cadastro">CADASTRAR</button>
-            </div>
+  const [pet, setPet] = useState({
+    nome: "",
+    raca: "",
+    especie: "",
+    cor: "",
+    sexo: "",
+    id_usuario: user.idusuario,
+  });
 
-                {/* <div className="div-img"> */}
-                    <img src="/assets/cat-dog-amico.png" alt="" className="img-dog-cadastro" ></img>
-                {/* </div> */}
-        </div>
-    );
+  const [mensagemCadastroPet, setMensagemCadastroPet] = useState();
+
+  async function cadastrar() {
+    const petJSON = JSON.stringify(pet);
+
+    try {
+      const response = await api.post("pets.php", petJSON);
+      if (response.data) {
+        if (response.data.erro) {
+          setMensagemCadastroPet(response.data.mensagem);
+        } else {
+          setMensagemCadastroPet(response.data.mensagem);
+        }
+      }
+    } catch (err) {
+      console.log(err);
+    }
+
+    setPet({
+      nome: "",
+      raca: "",
+      especie: "",
+      cor: "",
+      sexo: "",
+      id_usuario: user.idusuario,
+    });
+  }
+
+  return (
+    <div className="Cadastro">
+      <PetForm
+        values={pet}
+        setValues={(e) => {
+          setPet(e);
+        }}
+        submit={cadastrar}
+        btnName="Cadastrar"
+      />
+      <p>
+        <Link to="/dashboard/meus-pets">Voltar</Link>
+      </p>
+      <p>{mensagemCadastroPet}</p>
+    </div>
+  );
 }
-
-export default CadastrarPet;
