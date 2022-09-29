@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .App {
+    height: 100%;
+  }
+}

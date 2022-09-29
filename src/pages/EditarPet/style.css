@@ -1,0 +1,68 @@
+.container-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-edit {
+  max-width: 400px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px #00000080;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-edit div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.input {
+  width: 96%;
+  height: 50px;
+  background: rgba(108, 193, 250, 0.5);
+  border-radius: 20px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.button-edit {
+  background: #44EBA0;
+  border-radius: 20px;
+  width: 320px;
+  height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container-edit h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .container-home {
+    height: 100%;
+    margin-top: 100px;
+  }
+}

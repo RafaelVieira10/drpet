@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../../context/auth";
 import { useParams, useNavigate } from "react-router-dom";
 import api from "../../services/api";
+import "./style.css";
 
 export default function EditarPet() {
   const { user, adm } = useContext(AuthContext);
@@ -24,14 +25,13 @@ export default function EditarPet() {
   async function editarPet(e) {
     e.preventDefault();
     const editPetJSON = JSON.stringify(editPet);
-    
+
     const response = await api.put("pets.php", editPetJSON);
-    setMensagem(response.data.mensagem)
+    setMensagem(response.data.mensagem);
   }
 
   useEffect(() => {
     async function getPet() {
-
       const response = await api.get(`pets.php/${id}`);
       const pet = await response.data;
 
@@ -50,70 +50,66 @@ export default function EditarPet() {
   }, []); // eslint-disable-line
 
   return (
-    <div>
-      <h1>Editar pet</h1>
-      <div>
-        <form onSubmit={editarPet}>
-          <label>
-            Nome:
-            <input
-              type="text"
-              name="nome"
-              placeholder="Digite o nome do pet."
-              onChange={inputValue}
-              value={editPet.nome}
-              required
-            />
-          </label>
-          <label>
-            Raça:
-            <input
-              type="text"
-              name="raca"
-              placeholder="Digite a raça do pet."
-              onChange={inputValue}
-              value={editPet.raca}
-              required
-            />
-          </label>
-          <label>
-            Espécie:
-            <input
-              type="text"
-              name="especie"
-              placeholder="Digite a espécie do pet."
-              onChange={inputValue}
-              value={editPet.especie}
-              required
-            />
-          </label>
-          <label>
-            Cor:
-            <input
-              type="text"
-              name="cor"
-              placeholder="Digite a cor do pet."
-              onChange={inputValue}
-              value={editPet.cor}
-              required
-            />
-          </label>
-          <label>
-            Sexo:
-            <input
-              type="text"
-              name="sexo"
-              placeholder="Digite o sexo do pet."
-              onChange={inputValue}
-              value={editPet.sexo}
-              required
-            />
-          </label>
-          <input type="submit" value="Editar" />
-        </form>
+    <div className="container-home">
+      <div className="container-edit">
+        <h1>Editar pet</h1>
+        <div className="form">
+          <form onSubmit={editarPet}>
+            <div>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Digite o nome do pet."
+                onChange={inputValue}
+                value={editPet.nome}
+                className="input"
+                required
+              />
+              <input
+                type="text"
+                name="raca"
+                placeholder="Digite a raça do pet."
+                onChange={inputValue}
+                value={editPet.raca}
+                className="input"
+                required
+              />
+              <input
+                type="text"
+                name="especie"
+                placeholder="Digite a espécie do pet."
+                onChange={inputValue}
+                value={editPet.especie}
+                className="input"
+                required
+              />
+              <input
+                type="text"
+                name="cor"
+                placeholder="Digite a cor do pet."
+                onChange={inputValue}
+                value={editPet.cor}
+                className="input"
+                required
+              />
+              <input
+                type="text"
+                name="sexo"
+                placeholder="Digite o sexo do pet."
+                onChange={inputValue}
+                value={editPet.sexo}
+                className="input"
+                required
+              />
+            </div>
+            <input type="submit" value="Editar" className="button-edit" />
+          </form>
+        </div>
+        <p>{mensagem}</p>
+        <p>
+          <button onClick={() => navigate(-1)}>Voltar</button>
+        </p>
       </div>
-      <p>{mensagem}</p>
-      <p><button onClick={() => navigate(-1)}>Voltar</button></p>
     </div>
   );
 }

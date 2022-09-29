@@ -17,6 +17,8 @@ import CriarAgendamento from "./pages/CriarAgendamento";
 import EditarUsuario from "./pages/EditarUsuario";
 import Agendamentos from "./pages/Agendamentos";
 import FinalizarConsulta from "./pages/FinalizarConsulta";
+import Header from "./components/Header";
+import Pet from "./pages/Pet";
 
 export default function Rotas() {
   function Private({ children }) {
@@ -54,6 +56,7 @@ export default function Rotas() {
   return (
     <BrowserRouter>
       <AuthProvider>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
@@ -64,6 +67,15 @@ export default function Rotas() {
             element={
               <Private>
                 <Dashboard />
+              </Private>
+            }
+          />
+          <Route
+            exact
+            path="/dashboard/pet"
+            element={
+              <Private>
+                <Pet />
               </Private>
             }
           />

@@ -1,0 +1,21 @@
+.containerMeusPets {
+  width: 100vw;
+  height: 100%;
+  margin: 180px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #D7FFFF;
+  gap: 40px;
+}
+
+@media (max-width: 405px) {
+  .containerCard_MeusPets{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
