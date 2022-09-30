@@ -7,22 +7,22 @@ export default function AdmDashboard() {
   const { logout } = useContext(AuthContext);
   
   return (
-    <div>
+    <div className="dashboardADM">
       <h1>Logado ADM</h1>
       <p>
-        <button onClick={() => logout()}>Sair</button>
+        <Link className="link" to="/adm-dashboard/usuarios">Listar Usuários</Link>
       </p>
       <p>
-        <Link to="/adm-dashboard/usuarios">Listar Usuários</Link>
+        <Link className="link" to="/adm-dashboard/pets">Listar Pets</Link>
       </p>
       <p>
-        <Link to="/adm-dashboard/pets">Listar Pets</Link>
+        <Link className="link" to="/adm-dashboard/cadastrar-horario">Cadastrar horário</Link>
       </p>
       <p>
-        <Link to="/adm-dashboard/cadastrar-horario">Cadastrar horário</Link>
+        <Link className="link" to="/adm-dashboard/agendamentos">Agendamentos</Link>
       </p>
       <p>
-        <Link to="/adm-dashboard/agendamentos">Agendamentos</Link>
+        <button className="sair" onClick={() => logout()}>Sair</button>
       </p>
     </div>
   );

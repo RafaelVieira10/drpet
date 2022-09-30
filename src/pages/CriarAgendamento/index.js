@@ -31,12 +31,12 @@ export default function CriarAgendamento() {
       let horarios = await response.data;
 
       setHorariosDisponivel(
-        <select
+        <select className="select"
           name="id_horario"
           value={horarioValue}
           onChange={(e) => setHorarioValue(e.target.value)}
         >
-          <option value="Selecione">Selecione o horario</option>
+          <option className="option" value="Selecione">Selecione o horario</option>
           {horarios.map((horario) => {
             return (
               <option key={horario.idhorario} value={horario.idhorario}>
@@ -60,7 +60,7 @@ export default function CriarAgendamento() {
       let pets = await response.data;
 
       setPetsDisponivel(
-        <select
+        <select className="select"
           name="id_pet"
           value={petValue}
           onChange={(e) => setPetValue(e.target.value)}
@@ -68,7 +68,7 @@ export default function CriarAgendamento() {
           <option>Selecione seu Pet</option>
           {pets.map((pet) => {
             return (
-              <option key={pet.idpet} value={pet.idpet}>
+              <option className="option" key={pet.idpet} value={pet.idpet}>
                 {pet.nome}
               </option>
             );
@@ -82,15 +82,15 @@ export default function CriarAgendamento() {
   }, []); // eslint-disable-line
 
   return (
-    <div className="">
-      <p>
-        <Link to="/adm-dashboard/agendamentos/">Voltar</Link>
-      </p>
+    <div className="agendamento">
       <h1>Criar Agendamentos</h1>
       <form onSubmit={handleSubmit}>
         {horariosDisponivel}
         {petsDisponivel}
-        <input type="submit" value="Criar agendamento" />
+        <input className="button" type="submit" value="Criar agendamento" />
+      <p>
+        <Link className="link" to="/adm-dashboard/agendamentos/">Voltar</Link>
+      </p>
       </form>
       <p>{mensagem}</p>
     </div>

@@ -44,9 +44,6 @@ export default function CadastrarHorario() {
 
   return (
     <div className="CadastrarHorario">
-      <p>
-        <Link className="link" to="/adm-dashboard">Voltar</Link>
-      </p>
       <h2>Horarios Disponiveis</h2>
       <div className="horarios_disponivel">{horariosDisponivel}</div>
       <form className="form-cadastrar" onSubmit={cadastrarHorario}>
@@ -69,6 +66,9 @@ export default function CadastrarHorario() {
         />
         <input className="botaoAgendar" type="submit" value="Cadastrar" />
       </form>
+      <p>
+        <Link className="link" to="/adm-dashboard">Voltar</Link>
+      </p>
       <p>{mensagem}</p>
     </div>
   );

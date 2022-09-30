@@ -1,0 +1,41 @@
+.ListarUsuarios {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 40%;
+}
+/* .container-lista-usuarios h2 {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+} */
+.container-cards-lista {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    min-height: 360px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.Usuario{
+    width: 500px;
+    padding: 10px;
+    background-color: #6cc1fa;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+@media (max-width: 980px) {
+    .ListarUsuarios{
+        margin-top: 100px;
+    }
+}

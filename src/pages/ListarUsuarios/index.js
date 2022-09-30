@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import api from "../../services/api";
 import Usuarios from "../../components/Usuario";
+import './style.css'
 
 export default function ListarUsuarios() {
     const [usuarios, setUsuarios] = useState();
@@ -21,8 +22,8 @@ export default function ListarUsuarios() {
     return (
         <div className="ListarUsuarios">
             <h1>Listar Usuarios</h1>
-            <p><Link to="/adm-dashboard">Voltar</Link></p>
             {usuarios}
+            <p><Link className="link" to="/adm-dashboard">Voltar</Link></p>
         </div>
     )
 }

@@ -40,7 +40,7 @@ export default function Pet({ pet }) {
         )}
 
         <button onClick={deletePet} id="apagar_MeusPets">
-          Excluir
+         Excluir
         </button>
       </div>
       {mensagemDelete}
