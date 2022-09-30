@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import api from "../../services/api";
 import Pet from "../../components/Pet";
+import './style.css'
 
 export default function ListarPets() {
     const [pets, setPets] = useState();
@@ -20,10 +21,13 @@ export default function ListarPets() {
 
 
     return (
-        <div className="ListarPets">
-            <h1>Listar Pets</h1>
-            <p><Link to="/adm-dashboard">Voltar</Link></p>
-            {pets}
-        </div>
-    )
+        <div className="container-listar">
+                <h1>Listar Pets</h1>
+            <div className="ListarPets">
+                {pets}
+            </div>
+                <p><Link className="link" to="/adm-dashboard">Voltar</Link></p>
+            </div>
+        )
+        
 }

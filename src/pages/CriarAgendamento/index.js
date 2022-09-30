@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../../context/auth";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
+import './style.css'
 
 export default function CriarAgendamento() {
   const { user, adm } = useContext(AuthContext);
@@ -81,7 +82,7 @@ export default function CriarAgendamento() {
   }, []); // eslint-disable-line
 
   return (
-    <div className="CriarAgeandamento">
+    <div className="">
       <p>
         <Link to="/adm-dashboard/agendamentos/">Voltar</Link>
       </p>

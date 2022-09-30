@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth";
+import './style.css'
 
 export default function AdmDashboard() {
   const { logout } = useContext(AuthContext);

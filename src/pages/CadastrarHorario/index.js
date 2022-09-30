@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
+import './style.css';
 
 export default function CadastrarHorario() {
   const [horariosDisponivel, setHorariosDisponivel] = useState();
@@ -33,7 +34,7 @@ export default function CadastrarHorario() {
 
       setHorariosDisponivel(
         horarios.map((horario) => {
-          return <p key={horario.idhorario}>{horario.hora} {horario.data}</p>;
+          return <p className="horarios" key={horario.idhorario}>{horario.hora} {horario.data}</p>;
         })
       );
     }
@@ -44,15 +45,16 @@ export default function CadastrarHorario() {
   return (
     <div className="CadastrarHorario">
       <p>
-        <Link to="/adm-dashboard">Voltar</Link>
+        <Link className="link" to="/adm-dashboard">Voltar</Link>
       </p>
       <h2>Horarios Disponiveis</h2>
       <div className="horarios_disponivel">{horariosDisponivel}</div>
+      <form className="form-cadastrar" onSubmit={cadastrarHorario}>
       <h2>Cadastrar Horario</h2>
-      <form onSubmit={cadastrarHorario}>
         <input
           type="date"
           name="data"
+          className="inputVisualizarAgendar"
           value={horario.data}
           onChange={inputValue}
           required
@@ -60,11 +62,12 @@ export default function CadastrarHorario() {
         <input
           type="time"
           name="hora"
+          className="inputVisualizarAgendar"
           value={horario.hora}
           onChange={inputValue}
           required
         />
-        <input type="submit" value="Cadastrar" />
+        <input className="botaoAgendar" type="submit" value="Cadastrar" />
       </form>
       <p>{mensagem}</p>
     </div>

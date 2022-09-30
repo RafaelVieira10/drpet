@@ -1,3 +1,4 @@
+import './style.css';
 import { useState, useContext } from "react";
 import api from "../../services/api";
 import { Link } from "react-router-dom";
@@ -39,30 +40,41 @@ export default function Login() {
   }
 
   return (
-    <div className="Login">
-      <p>{String(authenticated)}</p>
-      <form onSubmit={handleLogin}>
-        <label>
-          Digite o E-mail
-          <input
-            type="email"
-            name="email"
-            onChange={inputValue}
-            value={user.email}
-          />
-        </label>
-        <label>
-          Digite a senha
-          <input
-            type="password"
-            name="senha"
-            onChange={inputValue}
-            value={user.senha}
-          />
-        </label>
-        <input type="submit" value="Login" />
+    <div className="containerLogin">
+      {/* <p>{String(authenticated)}</p> */}
+      <form onSubmit={handleLogin} className="formsLogin">
+        <div className="container_formsLogin">
+          <h1 className="tituloLogin">LOGIN</h1>
+            <input
+            placeholder="usuario@exemplo.com"
+              className="inputLogin"
+              type="email"
+              name="email"
+              onChange={inputValue}
+              value={user.email}
+            />
+         
+            <input
+            placeholder="Digite sua senha "
+              className="inputLogin"
+              type="password"
+              name="senha"
+              onChange={inputValue}
+              value={user.senha}
+            />
+
+          <input type="submit" value="Login" className="botao_login" />
+          <Link
+            className="cadastrar"
+            to={"/cadastro"}
+          >
+            Cadastre-se
+          </Link>
+        </div>
       </form>
-      <Link to="/">Voltar</Link>
+      {/* <div  className='divDogLogin'>
+        <img src="/assets/dogLogin.png" alt="Cachorro Login"></img>
+      </div> */}
       <p>{loginError}</p>
     </div>
   );

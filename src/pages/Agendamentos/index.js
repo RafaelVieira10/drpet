@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../../context/auth";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
+// import './style.css'
 
 export default function Agendamentos() {
   const { user } = useContext(AuthContext);
@@ -21,7 +22,7 @@ export default function Agendamentos() {
             let dataFormat = String(agendamento.data).split("-")
 
             return (
-              <div key={agendamento.idagendamento}>
+              <div className="" key={agendamento.idagendamento}>
                 <p>
                   Horario: {agendamento.hora} - {`${dataFormat[2]}/${dataFormat[1]}/${dataFormat[0]}`}
                 </p>
@@ -45,12 +46,14 @@ export default function Agendamentos() {
   }, []) // eslint-disable-line
 
   return (
-    <div>
-      <button onClick={() => navigate(-1)}>Voltar</button>
-      <h1>Agendamentos</h1>
-      {mensagem}
-      {agendamentos}
-      <p><Link to="/dashboard/agendamentos/criar-agendamento">Criar agendamento</Link></p>
+    <div className="">
+      <div className="teste">
+        <button onClick={() => navigate(-1)}>Voltar</button>
+        <h1>Agendamentos</h1>
+        {mensagem}
+        {agendamentos}
+        <p><Link to="/dashboard/agendamentos/criar-agendamento">Criar agendamento</Link></p>
+      </div>
     </div>
   );
 }
