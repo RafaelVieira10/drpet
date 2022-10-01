@@ -15,8 +15,11 @@
   padding-top: 2px;
   font-size: 16px;
   color: black;
-  font-weight: 700;
   width: 100%;
+}
+
+.texto_card p > span {
+  font-weight: bold;
 }
 
 .botao_MeusPets {

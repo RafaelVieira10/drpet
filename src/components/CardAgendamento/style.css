@@ -1,0 +1,29 @@
+.CardAgendamento {
+  flex-direction: column;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.dados {
+  width: 100%;
+}
+
+.dados > p {
+  margin: 0 0 15px 0;
+}
+
+.dados p > span {
+  font-weight: bold;
+}
+
+.status{
+  text-transform: capitalize;
+}

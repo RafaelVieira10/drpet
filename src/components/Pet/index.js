@@ -16,11 +16,21 @@ export default function Pet({ pet }) {
   return (
     <div className="Pet">
       <div className="texto_card">
-        <p>Nome: {pet.nome}</p>
-        <p>Raça: {pet.raca}</p>
-        <p>Espécie: {pet.especie}</p>
-        <p>Cor: {pet.cor}</p>
-        <p>Sexo: {pet.sexo}</p>
+        <p>
+          <span>Nome:</span> {pet.nome}
+        </p>
+        <p>
+          <span>Raça:</span> {pet.raca}
+        </p>
+        <p>
+          <span>Espécie:</span> {pet.especie}
+        </p>
+        <p>
+          <span>Cor:</span> {pet.cor}
+        </p>
+        <p>
+          <span>Sexo:</span> {pet.sexo}
+        </p>
       </div>
       <div className="botao_MeusPets">
         {adm ? (
@@ -40,7 +50,7 @@ export default function Pet({ pet }) {
         )}
 
         <button onClick={deletePet} id="apagar_MeusPets">
-         Excluir
+          Excluir
         </button>
       </div>
       {mensagemDelete}

@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../context/auth";
 
 function Header() {
-  const { logout, authenticated } = useContext(AuthContext);
+  const { logout, authenticated, adm } = useContext(AuthContext);
 
   function clicar() {
     let nav = document.querySelector(".dp-menu");
@@ -40,57 +40,77 @@ function Header() {
         <div className="container-nav">
           <div className="nav">
             <nav className="dp-menu">
-              <ul className="menu">
-                <li>
-                  <Link to={"/dashboard"}>Home</Link>
-                </li>
-
-                <li>
-                  <Link to={"/dashboard/agendamentos"}>Agendamentos</Link>
-                </li>
-
-                <li>
-                  <Link to={"/dashboard/pet"} className="">
-                    Pets
-                  </Link>
-                </li>
-
-                <li>
-                  <button onClick={() => logout()} className="sair">
-                    <FontAwesomeIcon
-                      icon={faRightToBracket}
-                      className="sair-icone"
-                    />
-                  </button>
-                </li>
-
-                <li>
-                  <Link to={"/dashboard/editar-dados"}>
-                    <FontAwesomeIcon
-                      icon={faCircleUser}
-                      className="icone-user"
-                    />
-                  </Link>
-                </li>
-              </ul>
+              {adm ? (
+                <ul className="menu">
+                  <li>
+                    <Link to={"/adm-dashboard"}>ADM Dashboard</Link>
+                  </li>
+                  <li>
+                    <button onClick={() => logout()} className="sair">
+                      <FontAwesomeIcon
+                        icon={faRightToBracket}
+                        className="sair-icone"
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <Link to={"/dashboard/editar-dados"}>
+                      <FontAwesomeIcon
+                        icon={faCircleUser}
+                        className="icone-user"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              ) : (
+                <ul className="menu">
+                  <li>
+                    <Link to={"/dashboard"}>Dashboard</Link>
+                  </li>
+                  <li>
+                    <Link to={"/dashboard/agendamentos"}>Agendamentos</Link>
+                  </li>
+                  <li>
+                    <Link to={"/dashboard/pet"} className="">
+                      Pets
+                    </Link>
+                  </li>
+                  <li>
+                    <button onClick={() => logout()} className="sair">
+                      <FontAwesomeIcon
+                        icon={faRightToBracket}
+                        className="sair-icone"
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <Link to={"/dashboard/editar-dados"}>
+                      <FontAwesomeIcon
+                        icon={faCircleUser}
+                        className="icone-user"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </nav>
           </div>
         </div>
       ) : (
         <div className="container-nav">
-        <div className="nav">
-          <nav className="dp-menu">
-            <ul className="menu">
-              <li>
-                <Link to={"/login"}>Login</Link>
-              </li>
-              <li>
-                <Link to={"/cadastro"}>Cadastro</Link>
-              </li>
-            </ul>
-          </nav>
+          <div className="nav">
+            <nav className="dp-menu">
+              <ul className="menu">
+                <li>
+                  <Link to={"/login"}>Login</Link>
+                </li>
+                <li>
+                  <Link to={"/cadastro"}>Cadastro</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
       )}
     </header>
   );

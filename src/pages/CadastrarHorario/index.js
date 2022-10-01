@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
-import './style.css';
+import "./style.css";
 
 export default function CadastrarHorario() {
   const [horariosDisponivel, setHorariosDisponivel] = useState();
@@ -20,7 +20,7 @@ export default function CadastrarHorario() {
     const horarioJSON = JSON.stringify(horario);
 
     const response = await api.post("horarios.php", horarioJSON);
-    setMensagem(response.data.mensagem)
+    setMensagem(response.data.mensagem);
     setHorario({
       data: "",
       hora: "",
@@ -34,7 +34,11 @@ export default function CadastrarHorario() {
 
       setHorariosDisponivel(
         horarios.map((horario) => {
-          return <p className="horarios" key={horario.idhorario}>{horario.hora} {horario.data}</p>;
+          return (
+            <p className="horarios" key={horario.idhorario}>
+              {horario.hora} {horario.data}
+            </p>
+          );
         })
       );
     }
@@ -46,30 +50,34 @@ export default function CadastrarHorario() {
     <div className="CadastrarHorario">
       <h2>Horarios Disponiveis</h2>
       <div className="horarios_disponivel">{horariosDisponivel}</div>
-      <form className="form-cadastrar" onSubmit={cadastrarHorario}>
-      <h2>Cadastrar Horario</h2>
-        <input
-          type="date"
-          name="data"
-          className="inputVisualizarAgendar"
-          value={horario.data}
-          onChange={inputValue}
-          required
-        />
-        <input
-          type="time"
-          name="hora"
-          className="inputVisualizarAgendar"
-          value={horario.hora}
-          onChange={inputValue}
-          required
-        />
-        <input className="botaoAgendar" type="submit" value="Cadastrar" />
-      </form>
-      <p>
-        <Link className="link" to="/adm-dashboard">Voltar</Link>
-      </p>
-      <p>{mensagem}</p>
+      <div className="container-cadastrar">
+        <h2>Cadastrar Horario</h2>
+        <form className="form-cadastrar" onSubmit={cadastrarHorario}>
+          <input
+            type="date"
+            name="data"
+            className="inputVisualizarAgendar"
+            value={horario.data}
+            onChange={inputValue}
+            required
+          />
+          <input
+            type="time"
+            name="hora"
+            className="inputVisualizarAgendar"
+            value={horario.hora}
+            onChange={inputValue}
+            required
+          />
+          <input className="botaoAgendar" type="submit" value="Cadastrar" />
+          {mensagem}
+        </form>
+      </div>
+      <div>
+        <Link className="voltar-horario" to="/adm-dashboard">
+          Voltar
+        </Link>
+      </div>
     </div>
   );
 }
