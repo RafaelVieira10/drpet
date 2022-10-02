@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../../context/auth";
 import { useNavigate } from "react-router-dom";
 import api from "../../services/api";
-
+import './style.css';
 export default function EditarUsuario() {
   const { user, adm } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -51,13 +51,13 @@ export default function EditarUsuario() {
   }, []); // eslint-disable-line
 
   return (
-    <div>
+    <div className="container-editar-usuario">
       <h1>Editar usuario</h1>
       <div>
         <form onSubmit={editarPet}>
           <label>
             Nome:
-            <input
+            <input className="input"
               type="text"
               name="nome"
               placeholder="Digite o novo nome."
@@ -68,7 +68,7 @@ export default function EditarUsuario() {
           </label>
           <label>
             Email:
-            <input
+            <input className="input"
               type="email"
               name="email"
               placeholder="Digite seu novo email."
@@ -79,7 +79,7 @@ export default function EditarUsuario() {
           </label>
           <label>
             Senha:
-            <input
+            <input className="input"
               type="password"
               name="senha"
               placeholder="Digite sua nova senha."
@@ -88,11 +88,13 @@ export default function EditarUsuario() {
               required
             />
           </label>
-          <input type="submit" value="Editar" />
+          <input className="button-edit" type="submit" value="Editar" />
         </form>
       </div>
+      <div className="container-voltar">
       <p>{mensagem}</p>
-      <p><button onClick={() => navigate(-1)}>Voltar</button></p>
+      <p><button className="voltar" onClick={() => navigate(-1)}>Voltar</button></p>
+      </div>
     </div>
   );
 }
