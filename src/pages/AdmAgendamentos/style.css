@@ -1,0 +1,64 @@
+.containerAgendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 95px;
+  gap: 40px;
+}
+
+.containerAgendar > h1 {
+  margin: 0;
+}
+
+.finalizar {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #44eba0;
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  border-radius: 10px;
+  padding: 5px 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.voltar {
+  background-color: #fa816c;
+}
+
+.criar {
+  background-color: #6cc1fa;
+}
+
+.agendamentos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 980px) {
+  .containerAgendar {
+    margin-top: 100px;
+  }
+}

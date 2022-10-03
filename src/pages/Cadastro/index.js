@@ -102,13 +102,13 @@ export default function Cadastro() {
           </Link>
         </div>
 
-        <div className="divDog">
+        {/* <div className="divDog">
           <img src="/assets/dogCadastrar.png" alt=""></img>
-        </div>
+        </div> */}
 
+      {mensagemCadastro}
       </form>
   
-      {mensagemCadastro}
     </div>
   );
 }

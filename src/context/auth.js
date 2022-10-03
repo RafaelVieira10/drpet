@@ -52,7 +52,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   function logout() {
-    navigate("/login");
+    navigate("/");
     setUser(null);
     localStorage.removeItem("user");
     localStorage.removeItem("pets");

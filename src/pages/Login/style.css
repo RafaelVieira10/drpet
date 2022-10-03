@@ -13,7 +13,7 @@
     border: 1px solid black;
     width: 50vw;
     max-width: 50vw;
-    height: 510px;
+    height: 400px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
@@ -29,7 +29,9 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px; */
 }
 
 .inputLogin {
@@ -66,7 +68,7 @@
   justify-content: center;
 }
 
-.divDogLogin{
+/* .divDogLogin{
   width: 70%;
   height: 509.5px;
   justify-content: flex-end;
@@ -76,7 +78,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-}
+} */
 
 @media (max-width: 1080px) {
   .divDogLogin{

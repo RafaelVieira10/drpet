@@ -55,19 +55,27 @@ export default function Rotas() {
 
   return (
     <BrowserRouter>
-    <Header />
       <AuthProvider>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/cadastro" element={<Cadastro />} />
-          <Route exact path="/Pet" element={<Pet />} />
           <Route
             exact
             path="/dashboard"
             element={
               <Private>
                 <Dashboard />
+              </Private>
+            }
+          />
+          <Route
+            exact
+            path="/dashboard/pet"
+            element={
+              <Private>
+                <Pet />
               </Private>
             }
           />

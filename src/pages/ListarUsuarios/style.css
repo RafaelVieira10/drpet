@@ -1,0 +1,49 @@
+.listar-usuarios {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ListarUsuarios {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 98px;
+  padding: 20px;
+  gap: 20px;
+  margin: 0 10px;
+}
+
+.ListarUsuarios > h1 {
+  margin: 0;
+}
+
+.usuarios {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+.voltar-usuarios {
+  width: 150px;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 0;
+  background-color: #fa816c;
+  border-radius: 20px;
+}
+
+@media (max-width: 980px) {
+  .ListarUsuarios {
+    margin-top: 100px;
+  }
+}

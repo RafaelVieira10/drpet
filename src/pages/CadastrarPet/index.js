@@ -1,8 +1,8 @@
 import { useState, useContext } from "react";
 import { AuthContext } from "../../context/auth";
-import { Link } from "react-router-dom";
 import api from "../../services/api";
 import PetForm from "../../components/PetForm";
+import "./style.css"
 
 export default function CadastrarPet() {
   const { user } = useContext(AuthContext);
@@ -45,19 +45,26 @@ export default function CadastrarPet() {
   }
 
   return (
-    <div className="Cadastro">
-      <PetForm
-        values={pet}
-        setValues={(e) => {
-          setPet(e);
-        }}
-        submit={cadastrar}
-        btnName="Cadastrar"
-      />
-      <p>
-        <Link to="/dashboard/meus-pets">Voltar</Link>
-      </p>
-      <p>{mensagemCadastroPet}</p>
+    <div className="container-cadastro-pet">
+      <div className="content-cadastro">
+        <h2>Cadastre seu Pet</h2>
+        <PetForm
+          values={pet}
+          setValues={(e) => {
+            setPet(e);
+          }}
+          submit={cadastrar}
+          btnName="Cadastrar"
+        />
+        <p className="mensagem">{mensagemCadastroPet}</p>
+      </div>
+
+      <img
+        src="/assets/cat-dog-amico.png"
+        alt=""
+        className="img-dog-cadastro"
+      ></img>
+
     </div>
   );
 }

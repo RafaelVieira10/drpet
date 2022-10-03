@@ -1,131 +1,141 @@
 header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 70px;
-    background-color: #ffff;
-    border-bottom: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #ffff;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 30px;
-    height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  height: 70px;
 }
 
 .icone-logo {
-    font-size: 38px;
-    margin-right: 15px;
+  font-size: 38px;
+  margin-right: 15px;
 }
 .icone-user {
-    font-size: 32px;
+  font-size: 32px;
 }
 .nav {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 }
 .nav a {
-    padding: 15px;
-    text-decoration: none;
-    color: #000000;
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
 }
- .dp-menu ul  {
-    list-style: none;
-    display: flex;
-    align-items: center;
+.dp-menu ul  {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 .dp-menu ul li {
-    position: relative;
+  position: relative;
 }
 .icon a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 .title-logo a{
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
+}
+
+.sair {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+.sair-icone {
+  font-size: 32px;
 }
 
 /* MENU MOBILE */
 .menu-mobile div {
-    width: 32px;
-    height: 3px;
-    background-color: #000;
-    margin: 8px;
+  width: 32px;
+  height: 3px;
+  background-color: #000;
+  margin: 8px;
 }
 .menu-mobile {
-    cursor: pointer;
-    position: absolute; 
-    right: 20px;
-    display: none;
+  cursor: pointer;
+  position: absolute; 
+  right: 20px;
+  display: none;
 }
 .active-nav {
-    display: block;
+  display: block;
 }
 
-
-
-
-
-
 @media (max-width:800px) {
-    .menu-mobile {
-        display: block;
-    }
-    nav {
-        position: absolute;
-        top: 8vh;
-        left: 0;
-        width: 70vw;
-        height: 100vh;
-        display: block;
-        display: none;
-        background-color: #fff;
+  .menu-mobile {
+      display: block;
+  }
+  nav {
+      position: absolute;
+      top: 8vh;
+      left: 0;
+      width: 70vw;
+      height: 100vh;
+      display: block;
+      display: none;
+      background-color: #fff;
+
+  }
+  .nav a {
+      padding: 0;
+      margin: 10px;
+      color: #000;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+  }
+  .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+  }    
+  .nav ul a {
+      margin-top: 50px;
+  }
+  ul a svg{
+      margin-top: 200px;
+  }
+  .dp-menu {
+      z-index: 9999;
+  }
+  .dp-menu ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .logo {
+      margin-left: 10px;
+  }
+  .menu {
+      padding: 0;
+  }
+
+  .sair {
+    margin-top: 50px;
+  }
   
-    }
-    .nav a {
-        padding: 0;
-        margin: 10px;
-        color: #000;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }    
-    .nav ul a {
-        margin-top: 50px;
-    }
-    ul a svg{
-        margin-top: 200px;
-    }
-    .dp-menu {
-        z-index: 9999;
-    }
-    .dp-menu ul {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .logo {
-        margin-left: 10px;
-    }
-    .menu {
-        padding: 0;
-    }
-    
 }

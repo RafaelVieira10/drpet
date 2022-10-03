@@ -41,7 +41,7 @@ export default function Login() {
 
   return (
     <div className="containerLogin">
-      <p>{String(authenticated)}</p>
+      {/* <p>{String(authenticated)}</p> */}
       <form onSubmit={handleLogin} className="formsLogin">
         <div className="container_formsLogin">
           <h1 className="tituloLogin">LOGIN</h1>
@@ -71,7 +71,7 @@ export default function Login() {
             Cadastre-se
           </Link>
         </div>
-        <div  className='divDogLogin' />
+        {/* <div  className='divDogLogin' /> */}
       </form>
       <p>{loginError}</p>
     </div>

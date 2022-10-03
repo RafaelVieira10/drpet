@@ -1,62 +1,42 @@
 .container-cadastro-pet {
-    max-width: 400px;
-    width: 100vw;
-    min-height: 620px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 400px;
+  width: 100vw;
+  min-height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content-cadastro  {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 25px;
-    border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 25px;
+  border-radius: 20px;
 }
-.content-cadastro input {
-    width: 320px;
-    height: 50px;
-    background: rgba(108, 193, 250, 0.5);
-    border: 1px solid #000;
-    border-radius: 20px;
-    margin-top: 20px;
-    outline: none;
-    font-size: 16px;
-    border: none;
-    padding-left: 20px;
-}
-.button-cadastro {
-    background: rgba(101, 101, 101, 0.5);
-    border: 1px solid rgba(101, 101, 101, 0.5);
-    border-radius: 20px;
-    width: 340px;
-    height: 50px;
-    font-weight: bold;
-    border: none;
-    background: #44EBA0;
-    margin-top: 20px;
-}
+
 .content-cadastro h2 {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 .img-dog-cadastro {
-    margin-left: 100px;
-    margin-bottom: -300px;
+  margin-left: 100px;
+  margin-bottom: -300px;
 }
 .container-cadastro-pet img{
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    margin-left: 250px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-left: 250px;
 }
 
-
-
+.mensagem {
+  color: #00d600;
+  font-weight: bold;
+}
 
 @media (max-width: 1200px) {
-    .img-dog-cadastro {
-        display: none;
-    }
+  .img-dog-cadastro {
+      display: none;
+  }
 }
