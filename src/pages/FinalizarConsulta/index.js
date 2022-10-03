@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"
 import api from "../../services/api";
+import './style.css'
 
 export default function FinalizarConsulta() {
     const { idagendamento } = useParams();
@@ -47,22 +48,22 @@ export default function FinalizarConsulta() {
     }, []) // eslint-disable-line
 
     return (
-        <div>
-            <button onClick={() => navigate(-1)}>Voltar</button>
+        <div className="finalizarConsulta">
             <h1>Finalizar consulta</h1>
             <form onSubmit={handleSubmit}>
                 <label>
                     Status da consulta
-                    <select value={selectValue} onChange={(e) => setSelectValue(e.target.value)}>
+                </label>
+                    <select className="select" value={selectValue} onChange={(e) => setSelectValue(e.target.value)}>
                         <option value="">Selecione</option>
                         <option value="concluido">Concluido</option>
                         <option value="cancelado">Cancelado</option>
                     </select>
-                </label>
                 <p>Indique o procedimento:</p>
                 <textarea cols="30" rows="10" value={textValue} onChange={(e) => setTextValue(e.target.value)} /><br />
-                <input type="submit" value="Enviar" />
+                <input className="enviar" type="submit" value="Enviar" />
             </form>
+            <button className="voltar" onClick={() => navigate(-1)}>Voltar</button>
         </div>
     )
 }
