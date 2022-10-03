@@ -92,8 +92,8 @@ export default function EditarUsuario() {
         </form>
       </div>
       <div className="container-voltar">
-      <p>{mensagem}</p>
       <p><button className="voltar" onClick={() => navigate(-1)}>Voltar</button></p>
+      <p  className="msg-result">{mensagem}</p>
       </div>
     </div>
   );

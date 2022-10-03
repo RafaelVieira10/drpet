@@ -27,7 +27,7 @@ export default function AdmAgendamentos() {
   }, []);
 
   return (
-    <div className="containerAgendar">
+    <div className="container-agendar-adm">
       <h1>Agendamentos</h1>
       {agendamentos}
       <div className="buttons">
@@ -37,7 +37,7 @@ export default function AdmAgendamentos() {
         >
           Criar agendamento
         </Link>
-        <Link className="link" to="/adm-dashboard">
+        <Link className="link-voltar" to="/adm-dashboard">
           Voltar
         </Link>
       </div>

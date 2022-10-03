@@ -89,7 +89,7 @@ export default function CriarAgendamento() {
         {petsDisponivel}
         <input className="button" type="submit" value="Criar agendamento" />
       <p>
-        <Link className="link" to="/adm-dashboard/agendamentos/">Voltar</Link>
+        <Link className="linkAgendamento" to="/adm-dashboard/agendamentos/">Voltar</Link>
       </p>
       </form>
       <p>{mensagem}</p>

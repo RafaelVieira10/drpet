@@ -19,3 +19,9 @@
       justify-content: center;
   }
 }
+
+@media (max-width: 640px) {
+  .containerMeusPets{
+      margin-top: 500px;
+  }
+}

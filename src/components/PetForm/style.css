@@ -1,10 +1,10 @@
 .input-cadastro {
-  width: 320px;
+  width: 90%;
   height: 50px;
   background: rgba(108, 193, 250, 0.5);
   border: 1px solid #000;
   border-radius: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   outline: none;
   font-size: 16px;
   border: none;
