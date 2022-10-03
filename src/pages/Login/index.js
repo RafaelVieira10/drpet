@@ -71,10 +71,8 @@ export default function Login() {
             Cadastre-se
           </Link>
         </div>
+        {/* <div  className='divDogLogin' /> */}
       </form>
-      {/* <div  className='divDogLogin'>
-        <img src="/assets/dogLogin.png" alt="Cachorro Login"></img>
-      </div> */}
       <p>{loginError}</p>
     </div>
   );

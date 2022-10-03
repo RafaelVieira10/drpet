@@ -5,7 +5,7 @@
     min-height: 450px;
     background-color: #fff;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 }
 .input{
     /* margin-left: 5px; */
-    width: 93%;
+    width: 90%;
     height: 50px;
     background: rgba(108, 193, 250, 0.5);
     border-radius: 20px;

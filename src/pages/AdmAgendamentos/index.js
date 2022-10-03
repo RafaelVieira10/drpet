@@ -37,7 +37,7 @@ export default function AdmAgendamentos() {
         >
           Criar agendamento
         </Link>
-        <Link className="link voltar" to="/adm-dashboard">
+        <Link className="link" to="/adm-dashboard">
           Voltar
         </Link>
       </div>

@@ -15,7 +15,10 @@
   flex-direction: column;
   align-items: center;
 }
-
+.logout{
+  width: 100px;
+  cursor: pointer;
+}
 .container-edit div {
   display: flex;
   width: 100%;
