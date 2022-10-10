@@ -50,7 +50,7 @@ export default function Cadastro() {
         <div className="container_forms">
           <h1 className="titulo">CADASTRE-SE</h1>
             <input
-            className="input"
+            className="inputCadastro"
               type="text"
               name="nome"
               placeholder="Digite seu nome."
@@ -62,7 +62,7 @@ export default function Cadastro() {
         
             
             <input
-              className="input"
+              className="inputCadastro"
               type="email"
               name="email"
               placeholder="Digite seu e-mail."
@@ -74,7 +74,7 @@ export default function Cadastro() {
         
             
             <input
-              className="input"
+              className="inputCadastro"
               type="password"
               name="senha"
               placeholder="Digite sua senha."
@@ -86,7 +86,7 @@ export default function Cadastro() {
         
             
             <input
-              className="input"
+              className="inputCadastro"
               type="text"
               name="cpf_cnpj"
               placeholder="Digite seu CPF / CNPJ."

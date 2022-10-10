@@ -64,3 +64,6 @@
     font-weight: bold;
     border: none;
 }
+button {
+  cursor: pointer;
+}

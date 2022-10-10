@@ -28,7 +28,7 @@ export default function AdmAgendamentos() {
 
   return (
     <div className="containerAgendar">
-      <h1>Agendamentos</h1>
+      {/* <h1>Agendamentos</h1> */}
       {agendamentos}
       <div className="buttons">
         <Link
