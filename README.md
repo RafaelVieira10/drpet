@@ -1,4 +1,4 @@
-![Logo](assets/logo-removebg-preview.png)
+<!-- ![Logo](assets/logo-removebg-preview.png) -->
 
 Desenvolvido com React e php 🚀
 
@@ -28,7 +28,7 @@ Estilos
 
 [Guia de Estilos](assets/Texto do seu parágrafo.pdf)
 
-Demosntração
+Demonstração
 ============
 
 ![Imagem de Cadastro](assets/Cadastro.png) ![Imagem de Cadastro](assets/Login.png) ![Imagem de Cadastro](assets/Home.png) ![Imagem de Cadastro](assets/Agendar.png) ![Imagem de Cadastro](assets/Pets.png) ![Imagem de Cadastro](assets/MeusPets.png) ![Imagem de Cadastro](assets/AdicionarPets.png) ![Imagem de Cadastro](assets/CriarAgendamento.png)
