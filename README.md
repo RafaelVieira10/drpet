@@ -1,4 +1,4 @@
-<!-- ![Logo](assets/logo-removebg-preview.png) -->
+![Logo](assets/logo-removebg-preview.png)
 
 Desenvolvido com React e php 🚀
 
